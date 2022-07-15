@@ -1,0 +1,98 @@
+.container{
+    width: $ancho;
+    @include miMixin2(500px,5px solid black,$bg-color-green);
+
+    .container__boton{
+        width: 30%;
+        height: 1.5rem;
+       
+     }
+    /*al tener una clase principal, si tengo que cambiar algo del codigo de ahi, voy a esa clase 
+    padre que tiene la mayoria de los atributos
+    con extend, heredo esos atributos y puedo dar una particularidad a esa clase
+    es como pensar que tengo una plantilla de un boton, y luego puedo hacer muchos botones que tenga
+    algo agregado*/
+    .container__boton--verde{
+        @extend .container__boton;
+        background-color: $bg-color-green;
+        color:white;
+        /*agregar animaciones*/
+
+    }
+    
+}
+/*aca vemos como reutilizo el codigo y le paso otro valor a la propiedad*/
+.container__header{
+    width: 100%;
+
+    @include miMixin2(100px,$borde-principal,rgb(66, 59, 59));
+  
+}
+/*operadores
+en este ejemplo usamos un valor en % y el resultado da en %
+
+.col-12{
+    width: ($ancho / 12) * 12;
+    }
+.col-6{
+    width: ($ancho / 12) * 12;
+    }
+ */
+
+
+/*utilizo un mixin que dentro tiene condicionales*/
+.facebook{
+    @include redes(facebook);
+}
+
+.instagram{
+    @include redes(instagram);
+}
+
+.telegram{
+    @include redes(telegram);
+}
+
+
+
+div {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  padding: map-get($estilos, 1rem);
+  font-size:map-get($estilos, tFuente);
+}
+
+div{    
+    background-color: map-get($estilos, color);
+}
+
+
+.container__boton{
+  @include miMixin2(100px,$borde);
+   
+}
+
+.container__boton--verde{
+   @include miMixin2(100px,$borde,$bg-color-green);
+
+}
+
+.box{
+    @include flex-row-center;
+    @include mixinHeight;
+}
+
+.container{
+    @include flex-row-center;
+}
+
+.footer{
+    @include flex-row-center;
+}
+
+.box2{
+	display:$flex;
+	flex-direction:$row;
+	justify-content:$center;
+}
+

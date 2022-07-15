@@ -1,0 +1,205 @@
+<!--esto es un comentario de html-->
+<!-- Para crear la estructura basica de html uso
+ signo de admiracion !+ tabb -->
+
+ <!-- IMPORTANTE:
+ DEBEMOS SER PROLIJOS
+MATENER LA IDENTACIÓN Y LA TABULACIÓN-->
+
+<!--EN HTML5 usamos estructura semantica :
+Para entender el HTML semántico podemos comenzar por revisar el significado de semántica:
+La semántica es la parte de la lingüística que estudia el significado de las expresiones lingüísticas.
+La semántica en el HTML5 se refiere al significado o información extra que otorgan los elementos o etiquetas del lenguaje, información que define o describe el contenido, función o sección que contienen.
+Esta información es lo que permite que un documento se pueda rastrear de mejor manera.
+Permite a personas con discapacidad, navegar y consumir tu contenido con mayor facilidad. Además que ayuda a los buscadores como Google rastrear y entender mejor el contenido de tu sitio de internet.-->
+
+
+<!DOCTYPE html> <!--etiqueta que indica que esto es una estructura de html5-->
+<html lang="es"> <!--esta etiqueta indica el lenguaje del contenido-->
+    <!--en el head van las configuraciones para el navegador-->
+    <head> 
+         <!--etiqueta que configura la codificación, acepta acentos y la letra ñ-->
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!--este es el titulo de la pagina que puede ver el usuario en la pestaña del navegador-->
+         <title>Clase 1</title>
+    </head>
+    <!--en el body va el contenido de la pagina-->
+    <body>
+        <!--el header es una etiqueta semantica 
+            Este elemento se utiliza para agrupar las piezas de introducción del contenido.-->
+        <header>
+            <!--uso una etiqueta de imagen para poner un logo-->
+             <img src="./images/logos_coderhouse.png" alt="Logo" width="200">
+               <!--Este elemento es para agrupar elementos de navegación del sitio, muy importante utilizarlo en el menú principal.-->
+            <nav>
+                <!--en las etiquetas a van los enlaces, -->
+                <a href="#">Inicio</a>
+                <a href="./pages/galeria.html">Galeria</a>
+                <a href="">Nosotros</a>
+                <a href="">discografia</a>
+                <a href="">Contacto</a>
+                <a href="#articleX">ARTICULO X</a>
+            </nav>
+          
+        </header>
+        <!--Main utilizado para indicar el contenido más importante de la página
+            aqui no van barras laterales ni tampoco propagandas. Solo el contenido principal de la pagina-->
+           
+        <main>
+            <!--las section delimitan contenido
+            Este elemento tiene un valor semántico más general y es utilizada para agrupar secciones o subsecciones de contenido. Puedo tener 1 o muchas secciones-->
+            <section>
+                <!--el h1 es el titulo principal de la pagina, puede solo tener 1 h1 excepto que tambien tengamos un h1 dentro de un article.-->
+                <h1>Titulo principal de la pagina</h1>
+                <!--el p es una etiqueta que delimita un parrafo-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi esse nulla, ad fugit, modi itaque accusamus laboriosam officiis, corporis perferendis cupiditate cum consectetur odit? Quidem alias tenetur harum nihil dolorum?</p>
+            </section>
+            <section>
+                <!--hay 6 diferentes etiquetas de titulos
+                h1 es el principal de la pagina,
+                del h2 al h6 son subtitulos y los podemos usar libremente-->
+                <h2>Subtitulo</h2>
+                <!-- la etiqueta br nos hace un salto de linea-->
+                <!--la etiqueta span nos va a servir para delimitar texto y luego darle estilos solo al contenido que este dentro de la etiqueta span, es una etiqueta en linea ya que solo ocupa el tamaño de su contenido-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Quasi esse nulla, ad fugit, modi itaque accusamus <span>laboriosam officiis</span> , corporis perferendis cupiditate cum consectetur odit? Quidem alias tenetur harum nihil dolorum?</p>
+                <!--la etiqueta div es una etiqueta agrupadora comodin que nos va a servir mucho en css
+                es una etiqueta de bloque, es decir que ocupa todo el ancho del viewport(navegador)-->
+                <div>
+                    <!--Las img son etiquetas de imagenes no tiene etiqueta de cierra
+                    Pero si tienen atributos
+                    en el src vamos a colocar la url de la imagen 
+                    en el atributo alt vamos a poner una breve descripcion de la imagen-->
+                    <img src="https://picsum.photos/200?random=1" alt="Imagen random 1">
+                    <br>
+                    <img src="https://picsum.photos/200?random=2" alt="Imagen random 2">
+                    <br>
+                    <img src="https://picsum.photos/200?random=3" alt="Imagen random 3">
+                </div>
+               
+            </section>
+
+        </main>
+        <!--En la etiqueta article voy a poner contenido independiente al principal
+        tiene sentido por si solo, no depende de nada
+        Un buen ejemplo es utilizarlo en un blog para agrupar cada uno de los artículos o publicaciones.-->
+        <article>
+            <header></header>
+            <h1>esto es correcto!!! </h1>
+        
+          <p>aca podria ir una noticia</p>
+          <footer></footer>
+        </article>
+        <article>
+            <h2>Titulo del articulo independiente</h2>
+            <p>no es obligatorio tener articles</p>
+        </article>
+        <article id="articleX">
+            <H2>ESTE ES EL ARTICLE</H2>
+            <h2>Titulo del articulo independiente</h2>
+            <p>esto podria usarse para un blog o para una pagina de noticias</p>
+
+        </article>
+        <!--En la etiqueta aside va el contenido que no se encuentra en el principal
+            las barras laterales con contenido como anuncios o los artículos más populares.-->
+        <aside>
+            <h3>Este es un aside</h3>
+            <p>aca puede ir propaganda</p>
+            <p>podria ser una barra lateral</p>
+        </aside>
+        <!--En la etiqueta footer va el pie de pagina
+         Contiene los avisos legales, información de derechos de autor e información de contacto. Por lo general también es la última sección de la página.-->
+        <footer>
+            <h4>Este es el footer</h4>
+            <p>Todos los derechos reservados</p>
+            <p>aca podemos poner un mapa, tambien links a redes sociales </p>
+            <p>redes sociales </p>
+        </footer>
+    </body>
+</html>
+
+<!-- como conclusion:
+ * html es un lenguaje de marcado de etiquetas
+ * en la etiqueta head van las configuraciones del navegador
+ * en la etiqueta body va el contenido de la pagina
+ * para crear un documento basico de html5 podemos usar accesos rapidos.
+ * hay etiquetas que tienen cierre y otras que no.
+   ejemplo: <img src=""> (no tiene cierre), <br> (no tiene cierre)
+   <header> aca va el contenido, pueden ser otras etiquetas </header> (tiene cierre)
+ * Hay etiquetas de bloque y etiquetas de linea, las de bloque ocupan todo el ancho de la ventana, sin importar el contenido que tengan, el div es una etiqueta en bloque,la etiqueta p tambien.
+   las img son etiquetas en linea, es decir que las imagenes se ubican una al lado de la otra
+ * la estructura semantica de html5 es muy importante para que el navegador pueda entender el contenido de la pagina.
+ * Podemos tener un solo titulo principal H1(excepto dentro de un article, podemos poner otro H1, otro header y otro footer, en cada article)
+ * etiquetas de parrafos <p>, imagenes <img>, saltos de linea <br>, 
+   subtitulos <h2> al <h6> podemos usarlas libremente.
+ * siempre tenemos que tener: 
+   header
+   nav
+   main
+   section
+   footer
+   las etiquetas article, aside son opcionales dependiendo del contenido que tengamos planificado para nuestra pagina
+   MACHETE DE ETIQUETAS
+   Etiqueta	Función
+<!–…–>	Define un comentario
+<!DOCTYPE>	Define el tipo de documento
+<a>	Define un hipervínculo
+<address>	Define la información de contacto del autor / propietario del documento
+<article>	Define un artículo
+<aside>	Define el contenido lateral del contenedor de una página
+<audio>	Define contenido de sonido
+<b>	Define texto en negrita
+<body>	Define el cuerpo del documento
+<br>	Define un salto de línea
+<button>	Define un botón clickeable
+<canvas>	Se usa para dibujar gráficos en pantalla
+<caption>	Define el título de una tabla
+<cite>	Define el título de un trabajo
+<code>	Define un trozo de código de programación
+<col>	Especifica las propiedades de la columna para cada columna del elemento <colgroup>
+<colgroup>	Especifica un grupo de una o más columnas de una tabla
+<div>	Define una sección en un documento
+<fieldset>	Grupo de elementos relacionados en un formulario
+<figcaption>	Define el título para una figura <figure>
+<figure>	Especifica auto-contenido
+<footer>	Define el pie de página de un documento
+<form>	Define un formulario html
+<h1> a <h6>	Define encabezados o títulos
+<head>	Define información hacerca del documento
+<header>	Define la sección de encabezado del docuemnto
+<hr>	Define un cámbio de temática a partir de una línea dibujada
+<html>	Define la raíz del documento
+<i>	Define una parte del texto de modo alternativo
+<iframe>	Define un frame en línea
+<img>	Define una imagen
+<input>	Define un control de entrada de texto
+<keygen>	Define un campo generador de claves para formularios
+<label>	Define el rótulo para un elemento <input>
+<legend> Define un título para los elementos <fieldset>, <figure>, <details>
+<li>	Define un ítem de una lista
+<meta>	Define un metadato de un documento
+<nav>	Define un link de navegación
+<ol>	Define una lista ordenada
+<option>	Define una opción en una lista desplegable
+<p>	Define un párrafo
+<script>	Define un script del lado cliente
+<section>	Define una sección de un documento
+<select>	Define un drop-down list
+<small>	Define texto pequeño
+<span>	Define una pequeña sección de un documento
+<strong>	Define un texto en negrita
+<style>	Define un estilo para la información de un documento
+<table>	Define una tabla
+<tbody>	Define el cuerpo de una tabla
+<td>	Define una celda en una tabla
+<textarea>	Define un control de entrada de múltiples líneas
+<tfoot>	Agrupa los footer contenidos en una tabla
+<th>	Define una celda de encabezado en una tabla
+<thead>	Agrupa los encabezados de una tabla
+<time>	Define fecha / hora
+<title>	Define un título para el documento
+<tr>	Define una fila en una tabla
+<ul>	Define una lista desordenada
+<video>	Define un vídeo o película
+-->

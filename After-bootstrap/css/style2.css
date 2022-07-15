@@ -1,0 +1,190 @@
+/*incorporamos los iconos de boostrap*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+/*
+
+PASO 1: VAMOS A TOMAR DE NUESTRO CSS QUE TENIA FLEXBOX LAS COSAS QUE NOS SIRVEN
+(EL RESET *)
+VAMOS A ACHICAR EL VIDEO A UN 100% DE ANCHO DE PANTALLA
+VAMOS A ACHICAR EL TAMAÑO DE LA IMG DEL HEADER(LOGO)
+VAMOS A PONER COLOR DE FONDO AL HEADER Y AL FOOTER 
+LE VAMOS A DAR LOS ESTILOS MINIMOS A LOS LINKS DE NAVEGACION.
+VAMOS A ACHICAR LA IMG DEL FOOTER Y AL FOOTER
+VAMOS A DARLE ESTILOS AL ICONO DE INSTAGRAR
+
+PASO 2 : VAMOS A DEFINIR A NUESTRO CONTENEDOR QUE TIENE 3 HIJOS UNICAMENTE COMO GRILLA
+VAMOS A DECIDIR CUANTAS COLUMNAS NECESITAMOS Y CUANTAS FILAS TENDRA NUESTRA PAGINA
+VAMOS A DEFINIR LAS AREAS PRINCIPALES DE NUESTRA PAGINA
+A CADA UNO DE ESOS HIJOS LE VAMOS A ASIGNAR UN AREA(YA QUE TENEMOS 3 HIJOS SERAN 3 AREAS)
+
+PASO 3: A CADA HIJO LO VAMOS A PENSAR COMO UN COMPONENTE Y VAMOS A DEFINIR QUE HIJOS TIENE ADENTRO, Y LUEGO VAMOS A VER SI USAMOS FLEX DEPENDIENDO COMO QUEREMOS QUE SE POSICIONE CADA HIJO
+DENTRO DE ESE COMPONENTE.
+
+PASO 4: CADA COMPONENTE A LA VEZ TENDRA HIJOS QUE SEAN COMPONENTES PEQUEÑOS(DENTRO DEL HEADER TENEMOS LA LISTA DE NAVEGACION, EN EL MAIN TENEMOS EL CONTENEDOR DE IMAGENES QUE TIENE HIJOS A SU VEZ), DENTRO DE CADA PEQUEÑO COMPONENTE VAMOS A NECESITAR QUE LOS HIJOS TOMEN UNA POSICION ESPECIFICA, QUE ESTE CENTRADO, O ALINEADO A LA DERECHA, DEPENDIENDO LO QUE QUERRAMOS NOSOTROS), ES AHI DONDE APLICAMOS FLEX Y COMBINAMOS CON LAS PROPIEDADES PARA LOGRAR ESE POSICIONAMIENTO.
+
+PASO 5: LOS PEQUEÑOS DETALLES, COMO BORDES, MARGENES, ANCHOS, ALTOS SERAN DADOS CON BOX MODEL.
+
+PASO 6: VAMOS A VERIFICAR QUE LA PAGINA SEA VEA BIEN EN ESCRITORIO, EN CELULAR Y TABLET, 
+DE NO SER ASI, APLICAMOS MEDIAS QUERYS (ES DECIR QUE PARA CIERTO RANGO DE PANTALLAS QUE NOSOTROS INDIQUEMOS, SE APLICARA UN ESTILO DIFERENTE, PUEDE SER SIMPLEMENTE CAMBIAR EL TAMAÑO DE UNA LETRA)
+
+paso 7: ordenamos el codigo por contenedor. 
+
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.encabezado{
+    grid-area: header;
+    /*esto corresponde a la maquetacion del componente como queremos acomodar a sus hijos que son:
+    el nav y el vide*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*primero vamos a achicar el logo del header*/
+.encabezado nav img {
+    width: 20%;
+}
+
+/*vamos a poner fondo negro a la navegación*/
+.encabezado nav {
+    background-color: black;
+    /*esto corresponde a la maquetacion del componente, como queremos acomodar a sus hijos que son:
+    la img y el ul*/
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+
+}
+.navbar{
+    /*esto corresponde a la maquetacion de este componente, que tiene como hijos a los li*/
+    /*aplicamos box model al ancho del ul, le decimos que ocupe el 100% de su contenedor*/
+    width:100%;
+    display:flex;
+    list-style: none;
+    justify-content:space-around;
+   
+   
+}
+
+/*vamos a sacar la decoracion a los links*/
+.navbar li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+/*vamos hacer que el video ocupe el ancho de 100% de la pantalla*/
+video{
+    width: 100%;
+  
+}
+/*al footer le aplicamos color de fondo*/
+footer {
+    background-color: black;
+    grid-area: footer;
+    /*El footer tiene como hijos la img y el ancla que contiene un icono de instagram*/
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+/*achicamos la imagen y aplicamos un margin con los demas elementos del footer*/
+footer img {
+    margin: 10px;
+    width: 5%;
+}
+/*al link del footer le aplicamos el tamaño a la letra y color blanco*/
+footer a {
+    color: white;
+    font-size: 3rem;
+}
+
+/*vamos armar nuestra grilla para todo el proyecto, luego este codigo lo vamos a ordenar y subir
+porque debemos tener cuidado con la cascada*/
+.container__grid{
+    /*tenemos que ver quienes son los hijos directos del contenedor div,
+    y en este caso son 3 header main footer*/
+    /*con esta linea no cambia nada*/
+    display: grid;
+    /*con esta linea cambia el tamaño de las columnas*/
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" 
+                          "main" 
+                          "footer";
+    grid-template-rows: auto;
+    /*
+    tambien podriamos poner esto, si miramos tenemos 4 columnas 
+    y en las areas colocamos 4 columnas tambien
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: "header header header header " 
+                        
+                         "main main main  main " 
+                         "footer footer footer footer";*/
+}
+
+/**/
+main{
+    background-color: rgb(211, 211, 211);
+    grid-area: main;
+    /*esto corresponde a la maquetacion interna del componente
+    el main tiene dos hijos--un h2 y un div que tiene como hijos las imagenes de las peliculas
+    queremos que este encolumnado y centrado*/
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+/*ahora tenemos que pensar en esos hijos
+header-main-footer 
+como vamos a maquetar cada componente, si queremos usar flex o grid dentro de estos hijos
+*/
+
+.contenedor-peliculas{
+    /*esto corresponde a la maquetacion del componente, como queremos acomodar a sus hijos que son:los divs que contienen a las imagenes y los h3*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*ahora queremos pensar a cada div que contiene la imagen y el h3 como un componente*/
+.card{
+    /*esto corresponde a la maquetacion del componente, como queremos acomodar a sus hijos que son: img y h3*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*cada card queremos que tenga un margen un borde y una sombra eso se hace con boxmodel*/
+    box-shadow: 0px 0px 10px #000;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card img{
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  /*en tamaño de pantallas pequeñas la letra se desborda y hace que tengamos un overflow-x
+  entonces vamos a achicar solo el tamaño de la letra para el componente lista de navegacion*/
+    .navbar li a {
+   
+        font-size: 1rem;
+    }
+    /*vamos a achicar achicar el tamaño de los divs que contienen las peliculas para que entre mas de uno por fila*/
+    .card{
+        width: 40%;
+        justify-content:space-around;
+    }
+   /*achicamos el icono de instagram*/
+    footer a{
+        font-size: 1rem;
+    }
+    
+}
+

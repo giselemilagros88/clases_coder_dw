@@ -1,0 +1,10 @@
+/*estilos del container*/
+.container__grid{
+    display: grid;
+    grid-template-columns: $row-column-auto;
+    grid-template-rows:$row-column-auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer"
+   
+}

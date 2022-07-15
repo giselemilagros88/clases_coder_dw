@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradientes</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;}
+
+       /* 
+       body{
+           /* background-image: linear-gradient(to right, #00bcd4, #d83bff);
+          /* background-image: linear-gradient(to left, #cd328a, #c777b9, #ba83ca, #aa8fd8, #9a9ae100, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #22a49b00);
+          background-image: linear-gradient(to top,rgba(0,0,0,.8),rgba(0,0,0,0),rgba(0,0,0,.8));
+        }*/
+
+        body{
+            height: 100vh;
+        }
+      
+        .container{
+           
+            width: 200px;
+            /*1vh = 1% de tamaño de alto de pantalla*/
+            height: 200px;
+           /* background-image: linear-gradient(to top,rgba(0,0,0,.8),rgba(0,0,0,0),rgba(0,0,0,.8));*/
+            background-color: aqua;
+            border: 1px solid #fff;
+            /*
+            transform: translate(250px);
+            transform:translateY(200px);
+            transform: rotate(270deg);
+            transform: scale(2);
+            transform: skewX(30deg);*/
+            transition: transform 5s;
+
+
+           
+
+        }
+
+        .container:hover{
+           background-color:hotpink;
+          /* height: 400px;
+           width: 400px;*/
+           transform: scale(2);
+        }
+
+        section{
+            width: 100%;
+            background-color: blue;
+
+        }
+
+        input {
+            width: 100px; 
+            height: 50px;
+            transition: all 2s;       
+        }
+        input:focus {
+            width: 200px;
+            font-size: 24px;
+        }
+
+
+        
+    </style>
+</head>
+<body>  
+    
+    <div class="container">
+        <h1>hola Mundo</h1>
+
+    </div>
+
+  
+    <form action="">
+        <div>
+            <input type="text" placeholder="Nombre">
+        </div>
+       
+    </form>
+
+    <!-- 
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, recusandae animi provident perferendis sed voluptas! Sit quos minima eos fugit reprehenderit explicabo, neque dicta sunt quo voluptate aperiam praesentium dignissimos!</p>
+    </section> -->
+
+    
+</body>
+</html>

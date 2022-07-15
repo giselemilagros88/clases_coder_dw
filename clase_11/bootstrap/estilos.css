@@ -1,0 +1,23 @@
+.div{
+    background-color: coral;
+}
+
+.colum_estilos{
+   
+    border: 1px solid black;
+}
+
+.row_estilos{
+   background-color: rgb(181, 167, 194);
+}
+
+body{
+    background-color: rgb(219, 206, 171);
+    background-color: white;
+}
+
+/*
+.tarjetas{
+    justify-content: center;
+}
+*/

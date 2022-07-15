@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dongle&family=Fjalla+One&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&family=The+Nautigal:wght@700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: content-box;/*por defecto usa css y no tiene en cuenta, ni el borde, ni el padding , ni el margin*/
+    /*Nosotros vamos a usar border-box que incluye el borde,
+     padding y entonces la caja mide realmente lo que nosotros le indicamos*/
+     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;/*1rem = 10px*/
+}
+
+/*div de cada card*/
+
+.seccion__principal{
+    
+    display:grid;
+    grid-template-columns: repeat(3 ,1fr);
+    background-color: rgba(175, 173, 173, 0.527);
+    width:100%;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+.header{
+    text-align: center;
+    position: sticky;   
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.5);
+    background-color: rgba(202, 142, 172, 0.582);
+    z-index:10;
+}
+footer{
+    text-align: center;
+ 
+    width: 100%;
+    box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.5);
+    background-color: rgba(202, 142, 172, 0.582);
+   
+}
+
+.seccion__principal__card{
+    background-color: rgb(172, 165, 165);
+    
+    width: 400px;
+    height:400px;/*tiene un alto maximo*/
+    box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
+    margin-top:2%;
+    margin-bottom: 2%;
+    /*CON ESTO CENTRAMOS EL ELEMENTO CON RESPECTO AL CONTENEDOR*/
+    margin-right:auto;
+    margin-left:auto;
+    align-items:stretch;
+    text-align: center;
+    overflow: auto;/*en caso de ser necesario se agrega un scroll, sino no se ve*/
+
+     /*POSITION : RELATIVE:
+     es relativo a su posicion inicial, es decir se mueve tantos pixeles indiquemos de su position inicial
+     con relative no cambia la posicion de los elementos que lo rodea, es decir que se quedan en la misma posicion*/
+     
+     /*CON ESTO YA NO ESTA CENTRADO CON RESPECTO AL CONTENEDOR 
+     position:relative;
+     left:200px;
+     top:20px; */
+    
+
+}
+
+  /*POSITION : ABSOLUTE, Se saca al elemento del flujo natural de su documento
+     los demas elementos lo ignoran
+.seccion_principal_contenedor{
+    background-color: cyan;
+    width: 200px;
+    height: 200px ;
+  
+   /*  position:absolute;
+     lo vamos a mover 200 px para abajo el borde del contenedor es la referencia 
+    top: 500px;
+    
+}*/
+
+.seccion__principal__card__h2{
+    font-size: 1.5rem;
+}
+
+.seccion__principal__card__img{
+    width: 80%; /*es al 80% del tamaño de su contenedor, en este caso el contenedor tiene que tener un tamaño fijo*/
+}
+
+.seccion__principal__card__p{
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.6;
+   
+}
+
+
+/*elementos en linea y en bloque*/
+/*en linea, aquellos elementos que solo ocupan el lugar de su contenido
+en bloque, aquellos que aunque su contenido sea poco, ocupan todo el espacio hasta terminar la linea*/
+/*DISPLAY- con esta propiedad podemos cambiar un elemento de linea a bloque, y de bloque a linea*/
+
+
+.header__img{
+    width: 5%;
+ 
+}
+
+.header__nav__enlace{
+  /*  Los enlaces son elementos en linea */
+    display:inline;
+    display: block;
+   /*  el mejor de los dos mundos Brinda la posibilidad tener “padding” y “margin” hacia arriba y abajo.*/
+   
+    display:inline-block; 
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 1%;
+    color: black;
+    background-color: rgb(220, 200, 223);
+    
+}
+
+/*cuando el mouse pasa por arriba del selector entonces cambia su color en este ejemplo*/
+
+.header__enlace:hover{
+    color:rgb(167, 31, 160);
+}
+
+.contactanos__enlace{
+    display:inline-block;
+    background-color: greenyellow;
+    color:black;
+    text-decoration: none;
+    font-size: 1rem;
+    padding : 1%;
+
+    /*POSITION: Valores posibles: relative, absolute, fixed, o sticky (cualquiera excepto static)top: calcula desde el borde superior (ej:  top: 100px ).
+    right: calcula desde el borde derecho (ej:  right: 50px).
+    bottom: calcula desde el borde inferior (ej: bottom: 100px ).
+    left: calcula desde el borde izquierdo (ej: left: 50%).
+    */
+    /*es un elemento que esta fijo, abajo a la derecha*/
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+
+}
+
+/*estilos de la galeria*/
+
+
+.titulo{
+    text-align: center;
+    font-size: 3rem;
+    padding : 0.8em 0.4;
+}
+
+.galeria{
+    padding-bottom : 3em;
+    padding-top: 1em;
+    display:grid;
+    grid-template-columns: repeat(4 , 1fr);
+    /*las filas automaticas van a ser de 160 pixeles*/
+    grid-auto-rows: 160px;
+    grid-template-areas: 
+    'img1 img2 img3 img3'
+    'img1 img4 img3 img3'
+    'img5 img5 img7 img7'
+    'img5 img5 img6 img8';
+    
+    gap : 0.8em;
+}
+
+.galeria__imagenes{
+    position:relative;
+    cursor:pointer;
+    /*que se esnconda todo lo que salga de ese elemento
+    ya que este elemento va a referenciar a un texto */
+    overflow: hidden;
+}
+/*pseudo elemento before*/
+.galeria__imagenes::before{
+    content:"Imagen";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:#c040f3a6;
+   /* transform: translate(100%);se mueve hacia la derecha */
+   /* transform: scale(0);*/
+    transform: scaleY(0);
+    transition: transform .4s;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    font-size:1.5rem ;
+    
+}
+.galeria__imagenes:hover::before{
+  /*  transform: scale(1) rotate(360deg)  ;*/
+     transform: scaleY(1);
+
+   /* transform: translate(0)  ;*/
+}
+.galeria__imagenes--g1{
+    grid-area: img1;
+}
+.galeria__imagenes--g2{
+    grid-area: img2;
+}
+.galeria__imagenes--g3{
+    grid-area: img3;
+}
+.galeria__imagenes--g4{
+    grid-area: img4;
+}
+.galeria__imagenes--g5{
+    grid-area: img5;
+}
+.galeria__imagenes--g6{
+    grid-area: img6;
+}
+.galeria__imagenes--g7{
+    grid-area: img7;
+}
+.galeria__imagenes--g8{
+    grid-area: img8;
+}
+.galeria__img{
+    width: 100%;
+    height: 100%;
+    /*la imagen no pierde la resolucion */
+    object-fit: cover;
+}
+
+/*celular o pantallas menores a 768*/
+@media (max-width:768px){
+
+    .seccion__principal{
+    
+        display:grid;
+        grid-template-columns: repeat(1 ,1fr);
+        background-color: rgba(175, 173, 173, 0.527);
+        width:100%;
+        margin:auto;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .header__nav__enlace{
+
+          font-size: 1rem;
+          width: 80%;
+   
+      }
+    .seccion__principal__card {
+        text-align: center;
+        align-items: center;
+        width:80%;
+    }
+    .seccion__principal__card h2,p{
+        font-size: 1rem;
+  
+    }
+   
+    .galeria{
+        width: 80%;
+        margin:auto;
+        z-index: -1;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-areas:
+        'img1 img2'
+        'img1 img3'
+        'img1 img3'
+        'img4 img5'
+        'img4 img5'
+        'img4 img5'
+        'img7 img6'
+        'img7 img8';
+
+    }
+    .galeria__imagenes::before{
+        font-size: 1rem;
+    }
+}

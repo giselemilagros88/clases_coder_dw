@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+  
+    margin:0;
+    padding:0;
+}
+body{
+
+}
+
+
+.container{
+    background-color: rgb(255, 255, 255);
+   /* padding: 60px ;*/
+    /*rota los elementos segun los grados que se indiquen*/
+   /* transform: rotate(10deg); */
+  /* transform: rotate(360deg);*/
+  /*   transform: rotateZ(90deg);*/
+
+
+}
+
+
+
+
+
+.box{
+   /*le damos un tamaño a la caja*/
+    width: 200px;
+    height: 200px;
+
+    background-color: white;
+    background-image: radial-gradient(circle, #000000, #3f1c2c, #78305d, #b0499b, #e169e7);
+
+    /*mueve los elementos segun los pixeles que se indiquen, se 
+    le puede poner 1 parametro, o dos*/
+    /*el primer parametro es en el eje de las x
+    el segundo parametros es en el eje de la y*/
+ 
+  
+   /*  transform: translateX(800px);*/
+    /* transform: translateY(200px);*/
+    color:white;
+    text-align: center;
+
+    /*como baja la caja 20px desde el top, entonces el texto queda arriba*/
+    transform: translate(100px,100px);
+    transform: rotate(60deg);
+    transform: rotateZ(90deg);
+    transform: scale(0.5);
+    object-fit: cover;
+
+   
+
+    /*rota los elementos segun los grados que se indiquen
+    transform: rotate(10deg); */
+
+    /*cambia la escala del objeto (como si fuese un zoom).*/
+    /*Igual que: scaleX(5) scaleY(1)
+    transform: scale(2,2);
+    margin:200px;
+    padding:10px;
+
+    transform: skew(20deg,10deg); */
+
+
+    
+}
+
+#delay {
+    font-size: 14px;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+   
+  }
+  
+  #delay:hover {
+    font-size: 36px;
+    color:blueviolet;
+  }
+
+
+  .box_2 {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.box_2:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+    transform: rotate(360deg);
+}

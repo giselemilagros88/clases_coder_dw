@@ -1,0 +1,33 @@
+ul {
+  list-style: none;
+}
+
+ul:hover {
+  color: white;
+}
+
+ul li {
+  padding: 15px;
+  display: inline-block;
+}
+
+ul li:hover {
+  background: #7c167f;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #444;
+}
+
+.container {
+  width: 100%;
+  height: 50vh;
+  background: #7c167f;
+}
+
+.footer {
+  background-color: #7c167f;
+}
+/*# sourceMappingURL=estilos.css.map */

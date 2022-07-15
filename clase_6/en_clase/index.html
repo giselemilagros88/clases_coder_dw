@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid propiedades del padre</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            /*
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 10px;
+            grid-auto-rows: minmax(100px, auto);*/
+            display: grid;
+            background-color: crimson;
+            border: 1px solid black;
+            width:95%;
+            margin: auto;
+            grid-template-columns: 100px auto;
+            grid-template-columns: repeat(3, 33%);
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+
+            /*
+             grid-template-columns: auto auto;
+            grid-column-gap: 10px;
+            grid-template-rows: repeat(3, 100px);
+            grid-row-gap: 10px;
+            /* start | end | center | stretch 
+            justify-items: start;
+            justify-items: stretch; 
+            justify-items: end; 
+            justify-items: center;
+            justify-items: stretch; 
+            
+            
+             
+            align-items: start; 
+            align-items: stretch;
+
+            /*esto alinea, no el contenido dentro de una celda, sino que todas las columnas o filas*/
+           /* justify-content: start;
+              align-content:start*/
+
+              /*  
+        #padre {
+            width: 95%;
+            border: 1px solid #000;
+            background-color: rgb(103, 102, 102);
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 10px;
+            grid-template-rows: repeat(3, 100px);
+            grid-row-gap: 10px;
+            /* start | end | center | stretch 
+            justify-items: start;
+            justify-items: stretch; 
+            justify-items: end; 
+            justify-items: center;
+            justify-items: stretch; 
+            
+            
+             
+            align-items: start; 
+            align-items: stretch;
+
+            /*esto alinea, no el contenido dentro de una celda, sino que todas las columnas o filas*/
+           /* justify-content: start;
+              align-content:start
+           
+          
+        }
+        #padre >* {
+            border: solid 1px #000;
+            font-size: 21px;
+            padding: 5px;
+           
+          /*  width: 200px;
+            height: 50px;
+        }
+        .hijo_1{
+            background-color : rgb(255, 0, 0);
+            /*estas propiedades son iguales que las justify-items
+            y que align-items pero no afectan a todas las celdas, sino a la celda 
+            en la que esta el hijo que estoy modificando
+            justify-self: start;
+            justify-self: center;
+            justify-self: end;
+            justify-self: stretch;
+            align-self: start;
+            align-self: center;
+            align-self: end;
+            align-self: stretch;
+            grid-column: 1 / 2;
+            grid-column: 2 / 3;
+           /* grid-row: 1 / 2;
+
+        }
+
+        .hijo_2{
+            background-color : rgb(128, 255, 0);
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        .hijo_5{
+            background-color : rgb(0, 255, 255);
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }   
+
+        @media screen and (max-width: 768px) {
+            #padre {
+                grid-template-columns: auto;
+                grid-template-rows: repeat(2, 100px);
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            #padre {
+               
+                grid-template-columns: auto;
+                grid-template-rows: repeat(2, 100px);
+            }
+        }
+            */
+
+
+        }
+        #padre >* {
+            border: solid 1px #000;
+            font-size: 21px;
+            padding: 5px;
+            background-color: rgb(232, 144, 227);
+          /*  width: 200px;
+            height: 50px;*/
+        }
+      
+
+
+    </style>
+</head>
+<body>
+  <div class="container" id="padre">
+    <header>
+        <nav>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </section>
+    </main>
+    <aside>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolores, aliquam, labore est culpa, quae commodi hic nesciunt nam iusto omnis facilis porro rem iste delectus odio eligendi? Commodi, dolore.</p>
+        </div>
+    </aside>
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, rem vitae reiciendis, aliquam debitis non porro beatae quae et corrupti quaerat unde quisquam rerum quam perferendis nulla reprehenderit voluptatum expedita.</p>
+    </footer>
+    
+    <!-- 
+        <div class="hijo_1">logo</div>
+        <div class="hijo_2">
+          
+        </div>
+        <div class="hijo_3">Item 3</div>
+        <div class="hijo_4">Item 4</div>
+        <h2 class="hijo_5"> titulo</h2>
+        <p class="hijo_6">parrafo</p>
+    -->
+    </div>
+   
+
+
+    
+     
+</body>
+</html>

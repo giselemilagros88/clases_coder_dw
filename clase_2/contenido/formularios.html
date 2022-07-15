@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <main>
+        <!--utilizamos un div que contiene al formulario-->
+        <div>
+            <!--la estructura basica del formulario se compone de :
+            form: es la etiqueta que engloba nuestro formulario
+            label: sirve para escribir el nombre del campo a rellenar
+            input: sirve para crear un campo que permitira que el usuario complete datos
+            button: crea un boton  -->
+             <!--etiqueta formulario, en el atributo action se debe colocar un documento que va a recibir los datos que vamos a enviar-->
+            <form action="varlidar.php" method="get" enctype="multipart/form-data">
+                 <!--utilizamos un div que contiene cada etiqueta label y cada etiqueta input-->
+                <div>
+                     <!--El atributo for del label debe tener el id del input eso hace que se relacionen-->
+                    <label for="nombre"> Nombre Completo </label>
+                    <!--atributos de input:
+                    id= debe tener un codigo unico e irrepetible, no podemos ponerlo en otra etiqueta, nos servira para css
+                    type= indicaremos que tipo de dato tendra el input
+                            en type podemos poner
+                            button se comporta igual que una etiqueta button
+                            color: el usuario va a poder elegir un color
+                            date: introducir una fecha
+                            time: se puede introducir una hora
+                            datetime: esta deprecado,no funciona en el navegador
+                            datetime-local: se puede seleccionar fecha y hora, pero en firefox no funciona
+                            email: se puede introducir un mail
+                            hidden: un campo que puede tener informacion pero esta oculto para el usuario
+                            month : podra seleccionar un mes
+                            number : se utiliza para ingresar valores numericos
+                            password: se ingresan contraseñas
+                            range: establece un rango
+                            reset : limpia el formulario
+                            search: se utiliza para las barras de busqueda
+                            submit: se utiliza para enviar el formulario 
+                            tel: se utiliza para introducir numeros telefonicos
+                            text: valor por defecto
+                           
+                            url: se pueden introducir urls
+                            week: introduce una semana del año
+                            radio: seleccionador excluyente
+                            checkbox : seleccionador incluyente
+                            
+                    step: permite establecer el rango de intervalos en los que se pueden mover los valores de los los input de fecha y numéricos.
+                    min y max : se pueden utilzar en los siguientes types de input number, range, date, datetime-local, month, time y week.
+                    checked : atributo booleano que sirve para marcar como seleccionado un input type checked o radio
+                    value: dato que ingresa el usuario, se puede setear previamente en el html
+                    name: atributo obligatorio que servira para enviar la informacion del campo al servidor 
+                    class: atributo para luego darle estilos al elemento de html
+                    placeholder: da una pista o sugerencia de que completar al usuario
+                    required: hace que un campo del formulario sea obligatorio
+                    readonly: hace que un campo sea de solo lectura y aunque el campo este readonly se envia la info igual al servidor
+                    maxlenght- minlenght: establece el minimo y maximo de caracteres de un campo tipo texto
+                    disabled : desactiva el campo y no se podra hacer foco en él ni se enviara al servidor
+                    autofocus: cuando se carga el formulario se hace foco en ese campo
+                    autocomplete: especifica si un formulario o un campo de entrada debe tener el autocompletado activado o desactivado.
+                        funciona en  types: text, search, url, tel, email, password, datepickers, range, y color.
+                        tambien se puede utilizar en en form de la siguiente forma:
+                        <form action="validar.html"  autocomplete="on"> 
+
+
+                    -->
+                    <input id ="nombre" name="nombre" type="text" placeholder="Ingrese Nombre y Apellido..." minlength="3" maxlength="50" required autofocus autocomplete="off">
+                    
+                </div>
+               <div>
+                    <label for="mail">Mail</label>
+                    <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
+                 </div>
+                <div>
+                     <label for="pass">Contraseña</label>
+                     <input id="pass" name="password" type="password" required>
+
+                </div>
+                <fieldset>
+                    <legend>Ingrese los siguientes Datos</legend>
+                    <div>
+                        <label for="fnac">Fecha de Nacimiento</label>
+                        <input id="fnac" name="fecha_nac" type="date" required>
+                        <input id="hnac" name="hora_nac" type="time" required>
+    
+                    </div>
+                    <div>
+                        <label for="edad">Indique su Edad</label>
+                        <input id="edad" name="edad" type="number" min=1 max=100 required>
+                        
+                    </div>
+                    <div>
+                        <label for="sueldo">Indique satisfaccion</label>
+                        <input id="sueldo" name="sueldo" type="range" step="5" min="0" max="20" required>
+                        
+                    </div>
+                    <div>
+                        <label for="mes"> Mes favorito del Año</label>
+                        <input id="mes" name="mes" type="month">
+                    </div>
+                    <div>
+                        <label for="mes"> Elija una Semana de vacaciones</label>
+                        <input id="mes" name="mes" type="week">
+                    </div>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Lenguajes que conoces</legend>
+                    <label for="html">Javascript
+                        <input id="html" name="lenguajes" type="checkbox" value="html" checked required>
+                    </label>
+                    <label for="php">PHP
+                        <input id="php" name="lenguajes" type="checkbox" value="php" checked required>
+                    </label>
+                    <label for="c">C
+                        <input id="c" name="lenguajes" type="checkbox" value="c" required>
+                    </label>
+                    <label for="c#">C#
+                        <input id="c#" name="lenguajes" type="checkbox" value="c#" required>
+                    </label>
+                    <label for="java">Java
+                        <input id="java" name="lenguajes" type="checkbox" value="java" required>
+                    </label>
+                    <label for="python">Python
+                        <input id="python" name="lenguajes" type="checkbox" value="python" required>
+                    </label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>¿Que lenguaje prefiere ?</legend>
+                    <label for="python_1">Python
+                        <input id="python_1" name="un_leng" type="radio" value="Python" checked required>
+                    </label>
+                    <label for="php_1">PHP
+                        <input id="php_1" name="un_leng" type="radio" value="php"  required>
+                    </label>
+                   
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Elementos seleccionables</legend>
+                    <div>
+                        <label for="prov">Indique Provincia</label>
+                        <select name="provincia" id="prov">
+                            <option value="Caba">Capital Federal</option>
+                            <option value="Buenos Aires" selected>Bs. As.</option>
+                            <option value="Catamarca">Catamarca</option>
+                            <option value="Chaco">Chaco</option>
+                            <option value="Chubut">Chubut</option>
+                            <option value="Cordoba">Cordoba</option>
+                            <option value="Corrientes">Corrientes</option>
+                            <option value="Entre Rios">Entre Rios</option>
+                            <option value="Formosa">Formosa</option>
+                            <option value="Jujuy">Jujuy</option>
+                            <option value="La Pampa">La Pampa</option>
+                            <option value="La Rioja">La Rioja</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Misiones">Misiones</option>
+                            <option value="Neuquen">Neuquen</option>
+                            <option value="Rio Negro">Rio Negro</option>
+                            <option value="Salta">Salta</option>
+                            <option value="San Juan">San Juan</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="Santa Cruz">Santa Cruz</option>
+                            <option value="Santa Fe">Santa Fe</option>
+                            <option value="Sgo. del Estero">Sgo. del Estero</option>
+                            <option value="Tierra del Fuego">Tierra del Fuego</option>
+                            <option value="Tucuman">Tucuman</option>
+                        </select>
+
+                    </div>
+                    <div>
+                        <label for="mascotas">Seleccione su/s Mascota/s</label>
+                        <!--el atributo multiple nos deja seleccionar varios items-->
+                        <select name="mascotas" id="mascotas" multiple>
+                            <!--agrupamos las selecciones con la etiqueta optgroup
+                            el atributo label sirve para poner el nombre del agrupador-->
+                            <optgroup label="4 patas">
+                                <option value="perro" selected>Perro</option>
+                                <option value="gato">Gato</option>
+                                <option value="hamster">Hamster</option>
+                                <option value="conejo">Conejo</option>
+                            </optgroup>
+                            <optgroup label="Aves">
+                                <option value="loro">Loro</option>
+                                <option value="canario">Canario</option>
+                            </optgroup>
+                            <optgroup label="otras">
+                                <option value="serpiente">Serpiente</option>
+                                <option value="tarantula">Tarántula</option>
+                                <option value="pez">pez</option>
+                            </optgroup>
+                        
+                        </select>
+
+                    </div>
+                    <div>
+                        <label for="color">Seleccione un Color</label>
+                        <input id="color" type="color">
+                    </div>
+                    
+
+                </fieldset>
+                <fieldset>
+                    <legend>Indique un Comentario</legend>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
+                    <br>
+                    <input id="no_modifica" name="no_modifica" type="text" value="No se puede modificar" readonly >
+                </fieldset>
+                <div>
+                    <fieldset>
+                        <input type="file" name ="archivo" >
+                    </fieldset>
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Grabe o limpie el formulario</legend>
+                        <input type="button" value="Cancelar">
+                        <button>Prueba</button>
+                        <input id="enviar" type="submit" value="Enviar">
+                        <input id="reset" type="reset" value="Limpiar">
+                    </fieldset>
+                </div>
+
+              
+                
+
+
+            </form>
+
+
+        </div>
+
+
+    </main>
+    
+</body>
+</html>

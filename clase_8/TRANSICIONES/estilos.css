@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.item{
+   background-color: blueviolet;
+   width: 200px;
+   height: 200px;
+   margin:20px;
+   clip-path: circle(50% at center);
+   /*como la transicion la pongo en el elemento lo hace siempre
+   cuando paso el mouse y cuando lo saco*/
+   transition: background-color , width 2s;
+   /*transition es un shorthand de 4 propiedades*/
+   /*que propiedades van a sufri la transicion*/
+   transition-property: all ;
+   transition-property: background-color , width, hight , clip-path ;
+   /*define el tiempo que dura la transicion*/
+   transition-duration: 2s ;
+   /*la curva de aceleracion de la transicion*/
+   transition-timing-function: ease-in-out;
+   transition-timing-function: ease;
+   transition-timing-function: ease-out;
+   transition-timing-function: ease-in;
+   /*cuanto tarda para ejecutarse la transicion*/
+   transition-delay: 1s ;
+}
+/*para que una transicion suceda, necesita de un 
+pseudoclases
+:hover :active :focus*/
+
+/*cada vez que paso el mouse*/
+.item:hover{
+ background-color: cyan;
+ /*si paso el mouse cambia de color a los 2 segundos, pero solo si paso el mouse*/
+/* transition: background-color 2s;*/
+ width: 400px;
+ clip-path: circle(150% at top left);
+}
+

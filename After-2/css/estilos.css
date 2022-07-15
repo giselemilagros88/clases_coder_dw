@@ -1,0 +1,128 @@
+/*importamos una fuente de google*/
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dongle&family=Fjalla+One&family=Lato:ital@1&family=Montserrat:wght@300&family=Palette+Mosaic&family=Poppins:ital,wght@0,400;0,600;0,700;1,700&family=Roboto:wght@300&family=The+Nautigal:wght@700&family=Updock&display=swap');
+
+/*reseteamos todos los valores*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*este lo vamos a ver el sabado ;)*/
+}
+html{
+   /* font-family: 'Roboto', sans-serif;*/
+  /*  font-family: 'Updock', cursive;*/
+    font-size: 62.5%;/* esto es igual a 10px ya que es el valor predeterminado del navegador es 16px*/
+    /*1rem - 1em = 16px*/
+}
+body{
+    /*indicamos que el body va a tener el tamaño del 100% de alto de pantalla- cada 1vh es 1% de alto de pantalla
+    1vh = 1% */
+    height: 100vh;
+  
+    /*-al body le vamos a dar un 100% de tamaño de pantalla 
+      - al header y el footer le vamos a dar el 15% de tamaño, es decir el 30% de la pantalla entre los dos
+      -el main ocupara un 35% de los 70% de pantalla que quedan restantes, y su hijo ocupara el 100% del main.
+      -y la seccion que esta fuera del main tendra el otro 35% de su padre(al igual que el main) */
+}
+/*ESTILOS GENERALES*/
+/*estilos para dos id, con la coma separamos los selectores*/
+#header , #footer{
+    width: 100%;
+    height: 15%; /*es el 15% del contenedor en este caso el body que tiene establecido un tamaño*/
+    background-color: #7e7e7e;
+    /*indicamos que la letra sera de un valor relativo con respecto a la etiqueta html*/
+    font-size: 1.2rem;
+    /*el texto lo ponemos en negrita*/
+    font-weight: bold;
+    /*agrega un interlineado al texto
+    line-height: 60px;*/
+}
+.header__nav , .footer__nav{
+    /*alineo los enlaces a la derecha*/
+    text-align: right;
+}
+.header__nav a , .footer__nav a{
+    /*sacamos la decoracion a los links las etiquetas a*/
+    text-decoration: none;
+    /*los enlaces van a ser blancos*/
+    color: #fff;
+}
+/*estilos para EL INDEX*/
+.main{
+    background-color: rgb(80, 80, 80);
+    /*indicamos que el main va a tener el 100% de ancho de la pantalla*/
+    width: 100%;
+    /*indicamos que el main va a tener el 35% de alto de la pantalla de su contenedor padre (body)*/
+    height: 40%;
+   
+}
+.main__seccion{
+    /*va a tener el 100% del tamaño de su contenedor padre, es decir del main*/
+   height:100%;
+   
+}
+
+.seccion{
+    /*va a tener 35% del contenedor padre,(body)*/
+  height:35%;
+}
+
+/*estilos PARA LA PAGINA CONTACTO*/
+.main__contacto{
+    /*va a tener el 70% del tamaño de su contenedor padre, es decir del body*/
+   height:70%;
+   
+}
+
+.main__contacto__seccion{   
+    /*va a tener el 100% del tamaño de su contenedor padre, es decir del main*/
+   height:100%;
+   
+}
+
+.fondo__formulario{
+    background-image: url("../assets/images/fondo_formulario.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:100%;
+    
+   
+   /* filter:blur(50px);
+    z-index: -1;
+   
+    background-color: rgba(0,0,0,0.5);*/
+}
+.caja__formulario{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(238, 39, 172);
+    text-align: center;
+    margin:0 auto; /*centramos el contenedor*/
+   
+}
+
+.formulario{
+    padding:2px;
+}
+
+.formulario input,textarea{
+    font-size: 1.5rem;
+    
+}
+
+/*estilos para nosotros*/
+
+.main__nosotros , .main__galeria , .main__info{
+    /*va a tener el 70% del tamaño de su contenedor padre, es decir del body*/
+   height:70%;
+   
+}
+
+.main__galeria__container{
+    /*va a tener el 100% del tamaño de su contenedor padre, es decir del main*/
+   background-color: rgb(80, 80, 80);
+   width:80%;
+   height:100%;
+   margin:0 auto;
+   text-align:center;
+}

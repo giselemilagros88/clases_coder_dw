@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dongle&family=Fjalla+One&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&family=The+Nautigal:wght@700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3rem;
+    padding : 0.8em 0.4;
+}
+
+.galeria{
+    padding-bottom : 3em;
+    padding-top: 1em;
+    display:grid;
+    grid-template-columns: repeat(4 , 1fr);
+    /*las filas automaticas van a ser de 160 pixeles*/
+    grid-auto-rows: 160px;
+    grid-template-areas: 
+    'img1 img2 img3 img3'
+    'img1 img4 img3 img3'
+    'img5 img5 img7 img7'
+    'img5 img5 img6 img8';
+    
+    gap : 0.8em;
+}
+
+.galeria_imagenes{
+    position:relative;
+    cursor:pointer;
+    /*que se esnconda todo lo que salga de ese elemento
+    ya que este elemento va a referenciar a un texto */
+    overflow: hidden;
+
+}
+/*pseudo elemento before*/
+.galeria_imagenes::before{
+    content:"Imagen";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:#c040f3a6;
+   /* transform: translate(100%);se mueve hacia la derecha */
+   /* transform: scale(0);*/
+    transform: scaleY(0);
+    transition: transform .4s;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    font-size:1.5rem ;
+    
+}
+.galeria_imagenes:hover::before{
+  /*  transform: scale(1) rotate(360deg)  ;*/
+     transform: scaleY(1);
+
+   /* transform: translate(0)  ;*/
+}
+.galeria_imagenes--g1{
+    grid-area: img1;
+}
+.galeria_imagenes--g2{
+    grid-area: img2;
+}
+.galeria_imagenes--g3{
+    grid-area: img3;
+}
+.galeria_imagenes--g4{
+    grid-area: img4;
+}
+.galeria_imagenes--g5{
+    grid-area: img5;
+}
+.galeria_imagenes--g6{
+    grid-area: img6;
+}
+.galeria_imagenes--g7{
+    grid-area: img7;
+}
+.galeria_imagenes--g8{
+    grid-area: img8;
+}
+.galeria_img{
+    width: 100%;
+    height: 100%;
+    /*la imagen no pierde la resolucion */
+    object-fit: cover;
+}
+
+/*celular o pantallas menores a 768*/
+@media (max-width:768px){
+    .titulo{
+        font-size: 2rem;
+        padding: 0.8em 0.4em;
+       
+    }
+    .galeria{
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-areas:
+        'img1 img2'
+        'img1 img3'
+        'img1 img3'
+        'img4 img5'
+        'img4 img5'
+        'img4 img5'
+        'img7 img6'
+        'img7 img8';
+    
+    }
+    .galeria_imagenes::before{
+        font-size: 1rem;
+    }
+}

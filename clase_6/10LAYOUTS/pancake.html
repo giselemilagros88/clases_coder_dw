@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pancake</title>
+</head>
+<style>
+ .parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  /*  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+  //  If we don't want the items to stretch: */
+  flex: 0 1 300px;
+  /*  If we do want the items to stretch:*/
+  flex: 1 1 300px;
+ 
+  border: 1px solid rgb(177, 214, 185);
+  background: rgb(180, 235, 175);
+  font-size: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: system-ui, serif;
+}
+</style>
+<body>
+    <div class="parent white">
+        <div class="box green">1</div>
+        <div class="box green">2</div>
+        <div class="box green">3</div>
+    </div>
+    
+</body>
+</html>

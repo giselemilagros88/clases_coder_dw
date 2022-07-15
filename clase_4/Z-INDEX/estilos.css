@@ -1,0 +1,73 @@
+div[class|="caja"]{
+    padding:10px;
+    margin:10px;
+    border:2px solid #666;
+    max-height:200px;
+    width:200px;
+    background-color: #c870fa;
+    position:absolute;
+}
+
+.caja-1{
+    top:10px;
+    left:10px;
+}
+
+.caja-2{
+    top:20px;
+    left:20px;
+}
+
+.caja-3{
+    top:30px;
+    left:30px;
+}
+
+.caja-4{
+    top:40px;
+    left:40px;
+
+}
+
+div.caja-5{
+    top:50px;
+    left:50px;
+    background:rgba(29, 241, 29, 0.4);
+    z-index:10;
+  
+}
+div.caja-6{
+    top:60px;
+    left:60px;
+  
+}
+
+.caja-7{
+    top:70px;
+    left:70px;
+}
+
+.caja-8{
+    top:80px;
+    left:80px;
+}
+
+.caja-9{
+    top:90px;
+    left:90px;
+}
+
+.caja-10{
+    top:100px;
+    left:100px;
+}
+
+.caja-11{
+    top:110px;
+    left:110px;
+}
+
+.caja-12{
+    top:120px;
+    left:120px;
+}

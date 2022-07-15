@@ -1,0 +1,28 @@
+
+main{
+    background-color: map-get($mapa-colores, gris);
+    grid-area: main;
+    @include flexbox(column,center,center);
+  
+    .contenedor-peliculas{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows :$row-column-auto;
+        gap:2%;
+        margin:2%;
+        .card{
+            width: $ancho_100;
+            @include flexbox(column,center,center);
+            box-shadow: 0px 0px 10px #000;
+            border-radius: 10px;
+            img{
+                width: $ancho_100;
+                
+            }
+        
+           
+        }
+    
+    }
+
+}

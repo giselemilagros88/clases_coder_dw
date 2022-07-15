@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+  
+}
+
+img{
+    width: 100%;
+}
+
+/*container padre de los divs*/
+.grid_container{
+   
+   
+    width: 90%;
+    margin: 0 auto;
+
+   
+    display:grid;
+    grid-template-columns: repeat(3 , 1fr);
+    
+   
+   
+   
+}
+/*hijos del container*/
+.grid_container div{
+  
+   
+}

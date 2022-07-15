@@ -1,0 +1,55 @@
+<figure class="text-center">
+
+<figure class="text-end">
+
+contenedores:
+https://getbootstrap.com/docs/5.0/layout/containers/
+Bootstrap viene con tres contenedores diferentes:
+
+.container, que establece un max-widthen cada punto de interrupción de respuesta
+.container-fluid, que está width: 100%en todos los puntos de interrupción
+.container-{breakpoint}, que es width: 100%hasta el punto de interrupción especificado
+.container	100%	540 px	720px	960 px	1140px	1320px
+.container-sm	100%	540 px	720px	960 px	1140px	1320px
+.container-md	100%	100%	720px	960 px	1140px	1320px
+.container-lg	100%	100%	100%	960 px	1140px	1320px
+.container-xl	100%	100%	100%	100%	1140px	1320px
+.container-xxl	100%	100%	100%	100%	100%	1320px
+.container-fluid	100%	100%	100%	100%	100%	100%
+
+display flex:
+https://getbootstrap.com/docs/5.0/layout/utilities/
+
+Bootstrap está construido con flexbox, pero no todos los elementos displayse han cambiado a, display: flex ya que esto agregaría muchas anulaciones innecesarias y cambiaría inesperadamente los comportamientos clave del navegador. La mayoría de nuestros componentes están construidos con flexbox habilitado.
+
+Si necesita agregar display: flex a un elemento, hágalo con .d-flex  o una de las variantes de respuesta (por ejemplo, .d-sm-flex). Necesitará esta clase o display valor para permitir el uso de nuestras utilidades adicionales de flexbox para dimensionamiento, alineación, espaciado y más.
+
+columnas
+https://getbootstrap.com/docs/5.0/layout/grid/
+
+Las columnas son increíblemente flexibles. Hay 12 columnas de plantilla disponibles por fila, lo que le permite crear diferentes combinaciones de elementos que abarcan cualquier número de columnas. Las clases de columna indican el número de columnas de plantilla que se van a abarcar (p. Ej., Se col-4 extiende a cuatro).width Los s se establecen en porcentajes para que siempre tenga el mismo tamaño relativo.
+
+
+colores :
+https://getbootstrap.com/docs/5.0/utilities/colors/
+https://getbootstrap.com/docs/5.0/utilities/background/
+
+margin y padding 
+https://getbootstrap.com/docs/5.0/utilities/spacing/
+
+texto
+https://getbootstrap.com/docs/5.0/utilities/text/
+
+componentes
+https://getbootstrap.com/docs/5.0/components/navbar/
+
+https://getbootstrap.com/docs/5.0/components/buttons/
+https://getbootstrap.com/docs/5.0/components/carousel/
+
+
+divs con distintos contenedores :
+    <div class="container-sm">100% wide until small breakpoint</div>
+    <div class="container-md">100% wide until medium breakpoint</div>
+    <div class="container-lg">100% wide until large breakpoint</div>
+    <div class="container-xl">100% wide until extra large breakpoint</div>
+    <div class="container-xxl">100% wide until extra extra large breakpoint</div>

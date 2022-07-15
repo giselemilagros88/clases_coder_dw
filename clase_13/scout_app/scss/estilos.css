@@ -1,0 +1,32 @@
+@import url(_variables.scss);
+/* el archivo que empieza con _(no se compila) Variables */
+#header {
+  position: fixed;
+  width: 100%;
+}
+
+#header p {
+  font-size: 30px;
+}
+
+#header p span {
+  color: #F44336;
+}
+
+#header .fontEspecial {
+  font-weight: bold;
+}
+
+#header .fontEspecial.blue {
+  color: blue;
+}
+
+#header .fontEspecial:hover {
+  color: crimson;
+  font-size: 50px;
+}
+
+.div {
+  width: 100%;
+}
+/*# sourceMappingURL=estilos.css.map */

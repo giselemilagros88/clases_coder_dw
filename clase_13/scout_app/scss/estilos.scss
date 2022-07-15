@@ -1,0 +1,28 @@
+@import url(_variables.scss);
+@import "variables";
+
+#header{
+ 
+    position:fixed;
+    p{
+        font-size:30px;
+        span{
+            color:$cool-red;
+        }
+    }
+    .fontEspecial{
+        font-weight: bold;
+        &.blue{
+            color:blue;
+        }
+        &:hover{
+            color:crimson;
+           font-size: 50px;
+        }
+    }
+    width:$cien_porciento;
+}
+
+.div{
+    width: $cien_porciento;
+}

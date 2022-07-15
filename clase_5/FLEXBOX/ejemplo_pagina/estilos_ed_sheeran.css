@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.seccion_header , footer{
+    background-color: #0BB3D9;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.div_logo{
+   /* background-color: deeppink;*/
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 50%;
+    margin-left: 10%;
+    padding-top: 1% ;
+    padding-bottom: 1%;
+}
+
+.div_enlaces{
+   /* background-color: gold;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    margin-right: 10%;
+    padding-top: 1% ;
+    padding-bottom: 1%;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;
+    padding: 2%;
+    
+    font-weight:bold;
+}
+
+.section_principal{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: space-between;
+    background-color: black;
+    color:white;
+  
+
+}
+
+.section_principal_parrafos{
+   
+    width: 40%;
+    height: 100%;
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+    margin-left:10% ;
+    margin-top:8%;
+    overflow: hidden;
+
+}
+
+.section_principal_img{
+    background-image: url("Ed_1.png");
+    background-position: center;   
+    background-size: cover;
+    width: 60%;
+    height:100% ;
+    margin-right:10% ;
+    padding: 10%;
+   
+
+}
+
+h1{
+    font-size: 4rem;
+}
+
+p{
+    font-size : 1rem;
+}
+
+
+footer{
+
+    font-size: 1rem;
+    color:white;
+    padding:3%;
+}

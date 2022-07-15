@@ -1,0 +1,29 @@
+
+
+/*estilos del header y de sus hijos*/
+.encabezado{
+    grid-area: header;
+    .navbar{
+        width: $ancho_100;
+        background-color: map-get($mapa-colores, rojo);
+        display:flex;
+        justify-content: space-around;
+        @include flexbox(row,flex-start,space-around);
+        list-style: none;
+        li a {
+            text-decoration: none;
+            font-size: 2rem;
+            color: white;
+        }
+        img {
+            width: $ancho_100 / 10;
+        }
+    
+    }
+    
+    video{
+     width:$ancho_100;
+    }   
+  
+}
+

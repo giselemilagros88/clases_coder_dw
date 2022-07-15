@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="./sass/estilos.css">
+
+    <title>After Bootstrap</title>
+</head>
+<body>
+    <div class="container__grid">
+       <header class="encabezado">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./src/logos/marvel.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Peliculas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Historia</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+            <video src="./src/videos/intro.mp4" autoplay muted loop ></video>
+            
+
+        </header>
+
+        <main>
+            <div class="container w-50 border border-3 mt-4 mb-4 d-flex justify-content-center align-items-center">
+                <h2>Galeria</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="src/carrousel/los-vengadores-artwork_1920x1080_xtrafondos.com.jpg" class="d-block w-100" style="object-fit:contain;" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="src/carrousel/marvel.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="src/carrousel/spiderman.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+    
+            </div>
+        
+
+            <h2>Peliculas</h2>
+
+            <section class="contenedor-peliculas">
+
+                <div class="card">
+                    <img src="./src/blackwidow.jpg" srcset="./src/blackwidow_600.jpg 600w, ./src/blackwidow_800.jpg 800w , ./src/blackwidow_1200.jpg 1200w" alt="">
+                    <h3>Black Widow</h3>
+                </div>
+                <div class="card">
+                    <img src="./src/blackwidow.jpg" alt="">
+                    <h3>Black Widow</h3>
+                </div>
+                <div class="card">
+                    <img src="./src/blackwidow.jpg" alt="">
+                    <h3>Black Widow</h3>
+                </div>
+                <div class="card">
+                    <img src="./src/blackwidow.jpg" alt="">
+                    <h3>Black Widow</h3>
+                </div>
+                <div class="card">
+                    <img src="./src/blackwidow.jpg" alt="">
+                    <h3>Black Widow</h3>
+                </div>
+                <div class="card">
+                    <img src="./src/blackwidow.jpg" alt="">
+                    <h3>Black Widow</h3>
+                </div>
+                <div class="card">
+                    <img src="./src/blackwidow.jpg" alt="">
+                    <h3>Black Widow</h3>
+                </div>
+                <div class="card">
+                    <img src="./src/blackwidow.jpg" alt="">
+                    <h3>Black Widow</h3>
+                </div>
+
+            </section>
+            <section id="contacto" class="mt-2 mb-5 container container-xs border border-4 shadow-lg p-3 mb-5 bg-body rounded">
+                <div class="mt-5 d-flex justify-content-center align-items-center">
+                    <h2>Contacto</h2>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center p-2">
+                    <input class="btn btn-outline-dark m-2" type="submit" value="Enviar">
+                    
+                    <input class="btn btn-outline-dark m-2" type="reset" value="Limpiar">
+                  </div>
+    
+            </section>
+        </main>
+
+       
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6  d-flex justify-content-center align-items-center">
+                        <img src="./src/logos/logoM.png" alt="">
+                    </div>
+                    <div class="col-xs-12 col-md-6  d-flex justify-content-center align-items-center">
+                        <a href="https://instagram.com"> 
+                            <i class="bi bi-instagram"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+     <!-- Option 1: Bootstrap Bundle with Popper 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+     
+     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

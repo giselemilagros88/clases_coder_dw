@@ -1,0 +1,96 @@
+/*una animación es un efecto que se loopea tantas veces como quieran.  No depende del cambio de estados (el elemento se animará desde la carga de la web).  Una animación es la unión de dos partes.  Por un lado una línea de tiempo (llamada keyframe) con la información de los cambios.  Por otro lado, aplicar ese keyframe a un elemento que será el que se verá animado.
+*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes un_efecto{
+    0%{ width: 100px; }
+    25%{ width: 300px; }
+    50%{ width: 400px;
+    background-color: rgb(0, 255, 234); }
+    75%{ width: 300px;}
+    100%{ width: 100px;
+    background-color:rgb(245, 24, 142);}
+} /*esta llave cierra el un_efecto */
+
+/*esta animacion se repite siempre porque esta puesta directamente en el elemento*/
+section{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(96, 228, 228);
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+button {
+    transform: translate(100px,100px);
+    width: 100px;
+    height: 100px;
+    background: rgba(17, 0, 255, 0.602);
+   /* transition: width 4s;*/
+    transition: all 5s; 
+    transition: width 4s, background-color 6s;
+    /*
+    transition-property: heigth ;
+    transition-duration: 8s ;
+    transition-delay:2s ;*/
+    
+
+ }
+ 
+ button:hover {
+    width: 300px;
+    height: 200px;
+    background-color: coral;
+ }
+
+ h1{
+     text-align: center;
+ }
+
+
+ .caja_rosa{
+    
+        width: 100px;
+        height: 100px;
+        margin:200px;
+        background-color: rgba(255, 0, 106, 0.767);
+        transform: skewY(25deg)
+     
+      
+ }
+
+ input {
+    margin:20px;
+    width: 100px; height: 50px;
+    transition: all 2s;       
+ }
+ input:focus {
+    width: 200px;
+    font-size: 24px;
+ }
+ 
+ h2 {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+ 
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+  
+ 
+   

@@ -1,0 +1,33 @@
+contenedor padre 
+
+grid-template:columnas / filas 
+grid-template-columns: cantidad de columnas
+grid-template-rows: cantidad de filas
+grid-template-areas:establecer un area 
+grid-column-gap:
+grid-row-gap:
+gap:
+
+justify-items
+align-items
+justify-content 
+align-content 
+
+propiedades de los hijos
+justify-self
+align-self
+grid-area
+
+
+mobile first
+
+@media screen and (min-width: 768px) {
+}
+
+
+diez diseños modernos de grid 
+https://web.dev/one-line-layouts/
+https://www.youtube.com/watch?v=qm0IfG1GyZU&t=3s
+
+colores 
+https://mycolor.space/

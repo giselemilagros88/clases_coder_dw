@@ -1,0 +1,60 @@
+
+/*Mediante la propiedad float, le estamos otorgando a un elemento la habilidad de flotar.
+ Es decir, salirse de ese flujo natural del sitio, y decidir hacia dónde queremos que ese elemento flote.
+Los valores que recibe son: left, right, none y inherit.*/
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+
+}
+
+
+/*CÓMO FLOTAR
+
+Es importante determinar un ancho para nuestras cajas. 
+De esta forma, vamos a poder controlar cuántas de ellas entran en una misma línea.
+
+Si la suma de los anchos de las cajas supera el ancho del contenedor padre,
+ éstas no van a entrar en la misma línea, sin importar que tengan asignada la propiedad de float
+ CÓMO SE COMPORTAN
+
+Por más de que floten, si los anchos de las cajas superan el ancho del contenedor,
+ bajarán un renglón. Si cuidamos los tamaños podemos tener tantas cajas en una línea como deseemos.
+
+Es clave usar anchos en porcentajes para poder hacer cálculos sencillos
+ 
+ 
+ */
+.contenedor{
+    margin:auto;
+    width:500px;
+    padding:20px;
+    border:1px solid #000;
+}
+
+img{
+    float:left;
+    width: 300px;
+}   
+
+.primero{
+    padding-top:80px;
+}
+
+
+.segundo
+{
+    clear:left;
+   
+}
+
+/*display:none*/
+
+
+/*Float nos permite por ejemplo:
+
+Apilar elementos lista o enlaces uno al lado de otro para simular un menú de navegación.
+Desplazar un elemento de un menú a un extremo, al principio o al final.
+Apilar contenedores cuyos anchos son en porcentaje para simular las columnas de un documento web.*/

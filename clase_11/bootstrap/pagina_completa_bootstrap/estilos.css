@@ -1,0 +1,17 @@
+.section{
+    height: 50vh;
+}
+
+.div-der{
+    background-image: url(img/honolulu.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+   .section__600{
+         height: 50vh;
+   }
+}
+
+

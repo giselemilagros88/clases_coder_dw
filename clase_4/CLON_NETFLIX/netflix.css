@@ -1,0 +1,165 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Helvetica;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-image: url("img/netflix_fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+ 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top:2%;
+}
+
+
+.header__der{
+    display: flex;
+    justify-content:flex-end;
+   
+   
+}
+
+.header__der__div{
+  margin-right:6%;
+  
+}
+
+.header_izq{
+    display: flex;
+    justify-content:flex-start;
+    
+}
+.header__boton{
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 140px;
+    height: 35px;
+    font-family: Helvetica;
+    padding:6px 6px;
+    right: 50px;
+   
+}
+
+.header__select{
+    background-color: #0000007c;
+    color: #fff;
+    border: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-right:16px;
+    margin-top:4px;
+    cursor: pointer;
+    width: 100px;
+    height: 36px;
+    font-family: Helvetica;
+    padding:6px 6px;
+    right: 50px;
+    border: #fff solid 1px;
+    border-radius: 2px;
+   
+}
+.header__logo{
+    width:136px;
+    object-fit: cover;
+   
+}
+.container{
+    position: absolute;
+    top:0;
+    width: 100%;
+    background: rgba(0,0,0,.4);
+    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.925) 0,rgba(0,0,0,0) 60%,rgba(0, 0, 0, 0.925) 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; 
+}
+
+.contenedor{
+    width: 80%;
+    margin: auto;
+    color:white;
+  
+}
+
+.contenedor__titulo{
+    font-size: 34px;
+    line-height: 55px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 13%;
+  
+}
+
+.contenedor__titulo h1{
+    margin-bottom: 1%;
+}
+.contenedor__titulo h2{
+    font-size: 26px;
+    font-weight:normal;
+    text-align: center;
+  
+}
+
+.contenedor__subtitulo h2{
+    font-size: 20px;
+    text-align: center;
+   margin-bottom: 0.8%;
+   
+ }
+
+ .contenedor__buscador{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    width: 60%;
+    margin:auto;
+   
+ }
+
+ .contenedor__buscador input{
+    width: 70%;
+    height: 60px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Helvetica;
+    cursor: text;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    color: rgb(0, 0, 0);
+    
+ }
+
+ .contenedor__buscador button { 
+    background-color: rgb(222, 6, 17);
+    color: #fff;
+    border: none;
+    display: inline-block;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 1px;
+    width:30%;
+    height: 60px;
+    font-family: Helvetica;
+    padding:6px 6px;
+   
+ }

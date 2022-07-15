@@ -1,0 +1,90 @@
+
+
+/*Flexbox
+
+Es una metodología de CSS que permite maquetar un sitio web utilizando una estructura de filas y columnas.
+Cuando usamos flotación para posicionar un elemento en un sitio web, 
+el mismo deja de formar parte del flujo natural de la estructura de elementos. 
+Esto genera solapamiento de cajas y estructuras difíciles de mantener.
+
+Flexbox propone un único flujo,
+ en el que dispondremos de los elementos con mayor libertad para distribuir, 
+ redimensionar y reordenar cada uno de ellos en función de ese flujo de trabajo.
+
+Estructura Básica de Flexbox
+
+Esta metodología propone una estructura basada en el uso de un contenedor padre (Flex-container) 
+y sus elementos hijos (Flex-items).
+
+Para empezar a trabajar con flexbox tenemos que definir un flex-container.
+ Para eso usamos la propiedad con el valor .
+  De esta forma estamos habilitando un contexto flex para trabajar con los hijos directos del elemento.
+
+.contenedor-padre {
+
+display: flex;
+
+}
+
+Estructura:
+
+Cuando hablamos de un flex-container, hablamos de un elemento HTML que contiene a uno o más elementos. 
+A estos elementos anidados, los llamamos flex-items.
+Es en el flex-container en donde configuramos la mayoría de las propiedades flex
+*/
+
+
+
+
+.contenedor{
+    /*convertimos a todos los elementos flexibles
+    a todos los hijos*/
+    display:flex;
+
+    /*centra dentro del padre*/
+    justify-content: center;
+    /*separa los elementos dentro del contenedor*/
+    justify-content: space-around;
+    /*tomen la misma distancia o espaciado entre ellos dentro del contenedor flexible, quedando el primer y último elemento pegados con los bordes del contenedor en el eje principal.
+    */
+    justify-content:space-between;
+    /*todos los elementos al final*/
+    justify-content: flex-end;
+
+    /*alinear contenido verticalmente*/
+   
+    align-items: baseline;
+    align-items: flex-end;
+    align-items: center;
+    justify-content: flex-start;
+    /*si el contenido se sale de la linea, los elementos siguen abajo*/
+    flex-wrap: wrap;
+    /*por defecto no da un salto de linea*/
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+img{
+    width: 100px;
+
+    width: 600px;
+}
+
+.header_ul{
+    background-color: darkorchid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header_enlace{
+   text-decoration: none;
+   font-size: 150%;
+  
+   background-color: deeppink;
+
+
+}
+

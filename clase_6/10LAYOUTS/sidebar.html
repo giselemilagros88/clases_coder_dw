@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+</head>
+<style>
+ body {
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar {
+  height: 100vh;
+ 
+  background: lightpink;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.content {
+  padding: 2rem;
+}
+
+body {
+  font-family: system-ui, serif;
+}
+</style>
+<body>
+    <div class="sidebar" contenteditable>
+        Min: 150px
+        <br/>
+        Max: 25%
+      </div>
+      <p class="content" contenteditable>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nostrum maxime earum ad distinctio fugit, accusantium vel eius qui inventore cupiditate voluptas perferendis animi, culpa labore, delectus id. Debitis, architecto.
+       Amet sequi natus quaerat, excepturi hic exercitationem. Quia accusamus, reiciendis officia doloribus tempora animi. Maxime magnam quas expedita praesentium sequi libero cupiditate, placeat eligendi dolorum, id in itaque eius tempore!</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+ul {
+    list-style: none;
+    font-size:0 /* truco por el uso de inline-block*/
+ }
+ li {
+    display: inline-block;
+    width: 25%;
+    position:relative;
+    font-size: 14px
+ }
+ ul ul {
+    position: absolute;
+    display: none;
+ }
+ ul ul li {
+    display: block;
+ }
+ ul li:hover ul {
+    display:block;
+ }
+ 
+ ul li a{
+     text-decoration: none;
+     font-size: 2rem;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     background-color: grey;
+     color:white;
+     padding-right:5%;
+     padding-left:5%;
+
+ }
+ 

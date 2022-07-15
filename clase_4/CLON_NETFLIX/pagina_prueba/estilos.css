@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dongle&family=Fjalla+One&family=Lato:ital@1&family=Poppins:ital,wght@0,400;0,600;0,700;1,700&family=Roboto:wght@400;500&family=The+Nautigal:wght@700&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+.header{
+    background-color: #311454;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+}
+
+.header__nav{
+    width: 100%;
+    background-color: #311454;
+   
+    
+}
+
+.header__nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: right;
+    padding: 5px;
+}
+
+.header__img{
+    width: 100%;
+    background-color: #311454;
+    text-align:right;
+}
+
+.main__tarjeta{
+    
+    background-color: #dadada;
+    border: 1px solid #DEDEDE;
+    text-align: center;
+    margin:5px;
+}
+
+.seccion__principal{
+    width: 100%;
+    background-color: #b1b1b1;
+    border: 1px solid #DEDEDE;
+    text-align: center;
+}
+
+.footer{
+    background-color: #311454;
+    color: #b1adad;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+   
+    text-align: center;
+    padding: 5px;
+}
+.custom-shape-divider-top-1648085735 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1648085735 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1648085735 .shape-fill {
+    fill: #07054D;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seccion Netflix</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 12.5px;   /* 10px = 1rem */
+            font-family: arial,helvetica,sans-serif;
+        }
+        body{
+            background-color: black;
+            color:white;
+        }
+        .container{
+            display:flex;
+            height:100vh;
+           
+        }
+        .container__hijo1{
+            height:92%;
+            width: 50% ;
+           
+            border-bottom: 10px solid #222;
+            background-image:url("netflix_nenes.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:contain;
+
+            
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+
+            
+        }
+
+        .container__hijo2{
+            width:50%;
+            height: 92%;
+            display:flex;
+            flex-direction:column;
+            align-items: flex-start;
+            justify-content:center;
+           
+            border-bottom: 10px solid #222;
+           
+        }
+        h2{
+            font-size: 5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        .box__parrafo{  
+            padding-right: 30px;
+        }
+        p{
+            font-size: 2.7rem;
+            line-height: 1.1;
+            margin-bottom: 0.5rem;
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <section class="container">
+       <div class="container__hijo1">
+          
+       </div>
+           
+      <div class="container__hijo2">
+        <h2>Crea perfiles para niños.</h2>
+        <div class="box__parrafo">
+            <p>
+                Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.
+            </p>
+        </div>
+      </div>
+
+         
+       
+     
+      
+    </section>
+
+<!-- 
+    <div class="padre_flexible">
+        <div>
+            <h2></h2>
+            <p></p>
+            <img src="" alt="">
+        </div>
+        <div>
+            <h2></h2>
+            <p></p>
+            <img src="" alt="">
+        </div>
+
+    </div>
+-->
+    
+</body>
+</html>

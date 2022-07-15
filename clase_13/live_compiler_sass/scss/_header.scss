@@ -1,0 +1,33 @@
+
+ul {
+    $tamanio-fuente:2rem;
+    list-style: none;
+    &:hover {
+        color:white;
+            }
+           li {
+              padding: 15px;
+              display: inline-block;
+                &:hover {
+                    background: $color-fondo;
+                }
+
+                a {
+                    text-decoration: none;
+                            font-size:  $tamanio-fuente;
+                    color: #444;
+                }
+            }
+   }
+
+   .container{
+         width: $ancho-100;
+         height: $alto-50;
+         background: $color-fondo;
+        
+   }
+
+   .footer{
+       background-color:$color-fondo;
+   }
+   

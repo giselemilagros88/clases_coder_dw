@@ -1,0 +1,40 @@
+@import url(_variables.scss);
+/* el archivo que empieza con _(no se compila) Variables */
+/* line 4, ../../../../../../../CODER/c31530/clase12y13/scout_app/scss/estilos.scss */
+#header {
+  position: fixed;
+  width: 100%;
+}
+
+/* line 7, ../../../../../../../CODER/c31530/clase12y13/scout_app/scss/estilos.scss */
+#header p {
+  font-size: 30px;
+}
+
+/* line 9, ../../../../../../../CODER/c31530/clase12y13/scout_app/scss/estilos.scss */
+#header p span {
+  color: #F44336;
+}
+
+/* line 13, ../../../../../../../CODER/c31530/clase12y13/scout_app/scss/estilos.scss */
+#header .fontEspecial {
+  font-weight: bold;
+}
+
+/* line 15, ../../../../../../../CODER/c31530/clase12y13/scout_app/scss/estilos.scss */
+#header .fontEspecial.blue {
+  color: blue;
+}
+
+/* line 18, ../../../../../../../CODER/c31530/clase12y13/scout_app/scss/estilos.scss */
+#header .fontEspecial:hover {
+  color: crimson;
+  font-size: 50px;
+}
+
+/* line 26, ../../../../../../../CODER/c31530/clase12y13/scout_app/scss/estilos.scss */
+.div {
+  width: 100%;
+}
+
+/*# sourceMappingURL=estilos.css.map */

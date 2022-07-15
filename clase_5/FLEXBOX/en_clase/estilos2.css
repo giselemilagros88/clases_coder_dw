@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.seccion{
+    /*padre del h2 y del div que contiene las imagenes*/
+    background-color: #3d3c3c;
+    display:flex;
+    flex-direction:column;
+
+}
+.contenedor{
+    /*padre de las imagenes*/
+    width:100%;
+    height:150vh;
+    background-color: aquamarine;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   /*align-items: flex-start;*/
+   align-content: center;
+   
+}
+/*
+.card{
+    width:500px;
+    height:500px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+   
+   
+
+}*/
+
+img{
+    width: 300px;
+    object-fit: cover;
+}
+
+.parrafoHola{
+    background-color: darkorchid;
+}
+
+.orden{
+  order:-1;
+}

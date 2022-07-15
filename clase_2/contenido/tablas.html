@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../enlaces.html">Inicio</a>
+            <a href="#">Colección</a>
+            <a href="">Exhibiciones</a>
+            <a href="">Agenda</a>
+            <a href="">Museo</a>
+        </nav>
+    </header>
+    <br>
+    <section>
+        <!--Son un conjunto de celdas organizadas, dentro de las cuales es posible alojar distintos contenidos. HTML dispone de una gran variedad de etiquetas y atributos para crear tablas. Sirven para representar información tabulada, en filas y columnas.
+        -->
+        <!--TABLA SIMPLE-->
+        <table border="1">  
+            <tr><!-- inicio de fila-->   
+              <td>Fila 1 - Columna 1</td>   
+              <td>Fila 1 - Columna 2</td>   
+              <td>Fila 1 - Columna 3</td>  
+            </tr><!-- cierre de fila -->  
+            <tr><!-- inicio de otra fila-->   
+              <td>Fila 2 - Columna 1</td>   
+              <td>Fila 2 - Columna 2</td>   
+              <td>Fila 2 - Columna 3</td>  
+            </tr><!-- cierre de la segunda fila --> 
+        </table>
+          <br>
+          <!--TABLA COMPLEJA-->
+          <!--el atributo border esta deprecado-->
+          <table border="1"  >
+            <!--TITULO DE LA TABLA-->
+            <caption>HORARIO DE CLASES</caption>
+          
+            <!--CABECERA DE LA TABLA-->
+            <thead>
+                <!--EL NUMERO DE CELDAS DENTRO DE UN TR ESTABLECE LAS COLUMNAS-->
+                <tr>
+                    <th></th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>X</th>
+                    <th>J</th>
+                    <th>V</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                   
+                    <td >8:30  - 9:30</td>
+                    <td> matematicas </td>
+                    <td> matematicas</td>
+                    <td> sociales </td>
+                    <td> matematicas </td>
+                    <td>matematicas</td>
+    
+                   
+                </tr>
+                <tr>
+                   
+                    <td>9:30  - 10:25</td>
+                    <td> Lengua </td>
+                    <td> Lengua</td>
+                    <td> matematicas </td>
+                    <td> Ciencias </td>
+                    <td> Lengua</td>
+    
+                   
+                </tr>
+                <tr>
+                   
+                    <td>10:25- 11:20</td>
+                    <td> Educación Fisica </td>
+                    <td> Ciencias </td>
+                    <td>  Lengua </td>
+                    <td> Lengua </td>
+                    <td> Educación Fisica</td>
+    
+                   
+                </tr>
+                <tr>
+                   
+                    <td>11:20  - 11:45</td>
+                    <td colspan="5"> Recreo </td>
+                   
+    
+                   
+                </tr>
+                <tr>
+                   
+                    <td>11:45  - 12:40</td>
+                    <td> Ingles </td>
+                    <td> Sociales</td>
+                    <td> Ingles </td>
+                    <td> Tutoria </td>
+                    <td> Ingles</td>
+    
+                   
+                </tr>
+                <tr>
+                   
+                    <td>12:40  - 13:35</td>
+                    <td> Musica </td>
+                    <td> Educacion Fisica</td>
+                    <td> plastica </td>
+                    <td> Religion </td>
+                    <td> Musica</td>
+    
+                   
+                </tr>
+                <tr>
+                   
+                    <td> 13:35  - 14:30</td>
+                    <td> Informatica </td>
+                    <td> Frances</td>
+                    <td> Informatica</td>
+                    <td> Frances </td>
+                    <td> Informatica</td>
+    
+                   
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total de Asignaturas</td>
+                    <td>12</td>
+                </tr>
+            </tfoot>
+        </table>
+          
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <section id="tablaEjemplo">
+        <table border="1" cellpadding='10' cellspacing='10' >
+            <tr>
+                <td>celda</td>
+                <td>celda</td>
+                <td>celda</td>
+            </tr>
+            <tr>
+                <td>celda</td>
+                <td>celda</td>
+                <td>celda</td>
+            </tr>
+            <tr>
+                <td>celda</td>
+                <td>celda</td>
+                <td>celda</td>
+            </tr>
+
+        </table>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <table border="1">
+        <caption>titulo opcional</caption>
+        <thead>
+            <tr>
+                <td> titulocolumnas</td>
+                <td>titulo columna2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>celda 1</td>
+                <td>celda 2</td>
+            </tr>
+            <tr>
+                <td>celda 1</td>
+                <td>celda 2</td>
+            </tr>
+            <tr>
+                <td>celda 1</td>
+                <td>celda 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">final de tabla</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <table border="1">
+        <tr>
+            <td>esta es una celda</td>
+            <td>esta es otra celda</td>
+        </tr>
+        <tr>
+            <td>celda 1 de fila 2</td>
+            <td>celda 2 de fila 2</td>
+        </tr>
+        <tr>
+            <td>celda 1 de fila 3</td>
+            <td>celda 2 de fila 3</td>
+        </tr>
+        <tr>
+            <td>celda 1 de fila 4</td>
+            <td>celda 2 de fila 4</td>
+        </tr>
+        <tr>
+            <td>celda 1 de fila 5</td>
+            <td>celda 2 de fila 5</td>
+        </tr>
+    </table>
+    
+    
+</body>
+</html>

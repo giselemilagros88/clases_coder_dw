@@ -1,0 +1,155 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+.clase {
+  color: red;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.clase:hover {
+  color: green;
+  text-decoration: none;
+}
+
+.clase {
+  color: red;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.clase:hover {
+  color: green;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*estilos del container*/
+.container__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "header" "main" "footer";
+}
+
+/*estilos del header y de sus hijos*/
+.encabezado {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.encabezado .navbar {
+  width: 100%;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  list-style: none;
+}
+
+.encabezado .navbar li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.encabezado .navbar img {
+  width: 10%;
+}
+
+.encabezado video {
+  width: 100%;
+}
+
+main {
+  background-color: #767676;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .contenedor-peliculas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 2%;
+  margin: 2%;
+}
+
+main .contenedor-peliculas .card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 10px #000;
+          box-shadow: 0px 0px 10px #000;
+  border-radius: 10px;
+}
+
+main .contenedor-peliculas .card img {
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+footer img {
+  margin: 10px;
+  width: 5%;
+}
+
+footer a {
+  color: white;
+  font-size: 3rem;
+}
+/*# sourceMappingURL=estilos.css.map */
