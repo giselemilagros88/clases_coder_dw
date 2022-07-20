@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 7</title>
+    <link rel="stylesheet" href="">
+    <style>
+       .grid{
+           
+            background-color: #d05af4;
+            width: 95%;
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 10px;
+            grid-template-rows: 100px 100px;
+            row-gap: 10px;
+           /* justify-items: end; /*start | end | center | stretch 
+            align-items:end;  /* start | end | center | stretch */
+            /*justify content depende de la altura del contenedor*/
+           /*height: 50vh; */
+            /* justify-content: space-evenly; /* start | end | center | space-around | space-between | space-evenly */
+            /*align-content: center; /* start | end | center | space-around | space-between | space-evenly */
+
+           
+        }
+        .grid div {
+            border: solid 1px;
+            font-size: 21px;
+            padding: 5px;
+            background-color: yellow;
+        }
+
+        .hijo3{ 
+            justify-self: center;
+        }
+
+        .color{
+            color:#d05af4;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="grid">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div class="hijo3">Item 3</div>
+        <div>Item 4</div>
+        <div>
+
+            <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+     </section>
+
+     <section>
+            <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/rslnizbt.json"
+                trigger="loop"
+                delay="2000"
+                colors="primary:#d05af4"
+                style="width:250px;height:250px;"></lord-icon>
+     </section>
+     
+</body>
+</html>

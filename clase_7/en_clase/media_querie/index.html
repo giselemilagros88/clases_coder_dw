@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clase 7 media queries</title>
+    <style>
+        /*este qie no tiene media query va a ser el comportamiento en celular osea de 0 a 768px*/
+        .box{
+            height: 200px;
+            background-color: #deed0d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        p{
+            font-size: 5rem;
+            color: #fff;
+        }
+        /*@media screen and (max-width: 769px) {*/
+        @media screen and (min-width: 769px) and (max-width: 1068px) {
+            .box {
+                 background-color: #3c3cef;
+            }
+            p{
+                font-size: 8rem;
+            }
+        }
+
+        @media screen and (min-width: 1068px) {
+            .box {
+                 background-color: #4eef3c;
+            }
+            p{
+                font-size: 12rem;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>Hola Mundo!</p>
+    </div>
+</body>
+</html>
