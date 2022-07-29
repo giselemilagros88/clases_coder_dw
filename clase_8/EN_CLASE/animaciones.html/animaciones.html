@@ -5,37 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>animaciones</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <style>
 
             section {
                 width: 100px;
                 height: 100px;
-                background-color: green;
-                animation-name: un_efecto;
+                background-color: rgb(226, 94, 42);
+                animation-name: pepe;
                 animation-iteration-count: infinite;
                 animation-timing-function: ease-in-out;
                 animation-duration: 10s;
                 animation-delay: 2s;
             }
-
-
-
-            @keyframes un_efecto {
-                0%{ width: 100px; }
-                25%{ width: 300px; }
+            @keyframes pepe {
+                0%{ width: 100px;
+                    
+                 }
+                25%{ width: 300px; 
+                    transform: scale(2);
+                 }
                 50%{ width: 400px;
-                        background-color: red; }
+                        background-color: rgba(255, 238, 0, 0.916);
+                        transform: scale(1);
+                     }
                 75%{ width: 500px;}
                 100%{ width: 600px;
-                    background-color:green;
+                    background-color:rgb(128, 9, 0);
+                    transform: scale(2);
             }
-}
+
+        }
+
+
+
+        
 
     </style>
 </head>
 <body>
-
+    <h1 class="color colorVioleta animate__animated animate__pulse animate__repeat-3 animate__delay-4s">Hola Mundo!!</h1>
     <section>
         <p>Lorem ipsum dolor</p>
     </section>
