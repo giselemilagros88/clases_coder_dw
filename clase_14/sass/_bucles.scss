@@ -8,9 +8,9 @@ en este caso dice que empieza en 1 y termina en 10 vueltas, cuando $i vale 10 se
     para que sass sepa que es una variable
     se usa como se ve en la linea siguiente */
    
-    .col-#{$i}{
+    .col-#{$i}   {
         /* aca no necesito poner la variable entre las llaves */
-        width: ($ancho / $total-columnas) * $i ;
+        width: calc($ancho / $total-columnas) * $i ;
     }
 } /*al final del bucle aumenta el valor de la variable del bucle $i para variable que empieza en 1 hasta 9 */
 
@@ -20,7 +20,7 @@ en este caso dice que empieza en 1 y termina en 10 vueltas, cuando $i vale 10 se
 /*recuerden que la variable $size*/
 
 
-@each $size in 10px, 12px, 14px , 20px,30px, 1rem{
+@each $size in 10px, 12px, 14px , 20px,30px, 1rem,3rem{
 
     .font-#{$size}{
         font-size: $size;
@@ -36,12 +36,6 @@ con $color accedo al valor de la clave*/
     .red-#{$key}{
         background-color: $valor;
        
-    }
-}
-
-@each $f,$w in $fuentes{
-    .font-#{$f}{
-        font-weight: $w;
     }
 }
 

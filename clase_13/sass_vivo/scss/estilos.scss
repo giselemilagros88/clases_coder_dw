@@ -1,0 +1,56 @@
+@import "config.scss";
+@import "variables.scss";
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.header{
+    background-color:#444;
+    .navegador {
+        list-style: none;
+           .navegador__item {
+              padding: 15px;
+              display: inline-block;
+                  .link {
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: #444;
+                  }
+            }
+    }
+}
+.color{
+    background-color: #444;
+}
+
+li {
+    color:blue;
+    &:hover{
+            color:red;
+            }
+}
+
+body {
+    color: $color-texto;
+    font-family: $tipografia-general;
+  }
+  
+  h1 {
+    background-color: $color-primario;
+    color: $color-blanco;
+    font-family: $tipografia-alternativa;
+    font-size: $fuente-grande;
+    padding: $espaciado-estandar;
+    text-transform: uppercase;
+    border-radius: 12px;
+  }
+  
+  div.destacado {
+    border: 1px solid $color-secundario;
+    padding: $espaciado-estandar $espaciado-doble;
+  }

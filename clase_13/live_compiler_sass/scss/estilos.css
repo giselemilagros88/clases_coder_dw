@@ -1,20 +1,16 @@
 ul {
   list-style: none;
 }
-
 ul:hover {
   color: white;
 }
-
 ul li {
   padding: 15px;
   display: inline-block;
 }
-
 ul li:hover {
   background: #7c167f;
 }
-
 ul li a {
   text-decoration: none;
   font-size: 2rem;
@@ -30,4 +26,16 @@ ul li a {
 .footer {
   background-color: #7c167f;
 }
-/*# sourceMappingURL=estilos.css.map */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.color {
+  color: red;
+}
+
+.pepe {
+  background-color: rgb(255, 255, 0);
+}/*# sourceMappingURL=estilos.css.map */

@@ -7,104 +7,105 @@ ningun modificador, entonces es recomendable en este caso usar extend*/
 en programación es lo que se llama una funcion
 yo defino una porcion de codigo y luego la llamo cuando la necesito
 en este caso esta recibiendo una variable que solo existe localmente en esta funcion(no es una variable global)*/
+/*ver este ejemplo cuando veamos condicionales*/
 /*la $i es una variable local del for que toma el valor de cada vuelta que se repite
 en este caso dice que empieza en 1 y termina en 10 vueltas, cuando $i vale 10 se corta el bucle
 @for $i from 1 to 10 el to no tiene encuenta el valor final*/
 /*lo que estoy haciendo aca es formar el nombre de la clase con la variable
-    en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
-    col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
-    para que sass sepa que es una variable
-    se usa como se ve en la linea siguiente */
+en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
+col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
+para que sass sepa que es una variable
+se usa como se ve en la linea siguiente */
 .col-1 {
   /* aca no necesito poner la variable entre las llaves */
   width: 10%;
 }
 
 /*lo que estoy haciendo aca es formar el nombre de la clase con la variable
-    en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
-    col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
-    para que sass sepa que es una variable
-    se usa como se ve en la linea siguiente */
+en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
+col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
+para que sass sepa que es una variable
+se usa como se ve en la linea siguiente */
 .col-2 {
   /* aca no necesito poner la variable entre las llaves */
   width: 20%;
 }
 
 /*lo que estoy haciendo aca es formar el nombre de la clase con la variable
-    en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
-    col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
-    para que sass sepa que es una variable
-    se usa como se ve en la linea siguiente */
+en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
+col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
+para que sass sepa que es una variable
+se usa como se ve en la linea siguiente */
 .col-3 {
   /* aca no necesito poner la variable entre las llaves */
   width: 30%;
 }
 
 /*lo que estoy haciendo aca es formar el nombre de la clase con la variable
-    en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
-    col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
-    para que sass sepa que es una variable
-    se usa como se ve en la linea siguiente */
+en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
+col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
+para que sass sepa que es una variable
+se usa como se ve en la linea siguiente */
 .col-4 {
   /* aca no necesito poner la variable entre las llaves */
   width: 40%;
 }
 
 /*lo que estoy haciendo aca es formar el nombre de la clase con la variable
-    en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
-    col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
-    para que sass sepa que es una variable
-    se usa como se ve en la linea siguiente */
+en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
+col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
+para que sass sepa que es una variable
+se usa como se ve en la linea siguiente */
 .col-5 {
   /* aca no necesito poner la variable entre las llaves */
   width: 50%;
 }
 
 /*lo que estoy haciendo aca es formar el nombre de la clase con la variable
-    en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
-    col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
-    para que sass sepa que es una variable
-    se usa como se ve en la linea siguiente */
+en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
+col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
+para que sass sepa que es una variable
+se usa como se ve en la linea siguiente */
 .col-6 {
   /* aca no necesito poner la variable entre las llaves */
   width: 60%;
 }
 
 /*lo que estoy haciendo aca es formar el nombre de la clase con la variable
-    en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
-    col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
-    para que sass sepa que es una variable
-    se usa como se ve en la linea siguiente */
+en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
+col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
+para que sass sepa que es una variable
+se usa como se ve en la linea siguiente */
 .col-7 {
   /* aca no necesito poner la variable entre las llaves */
   width: 70%;
 }
 
 /*lo que estoy haciendo aca es formar el nombre de la clase con la variable
-    en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
-    col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
-    para que sass sepa que es una variable
-    se usa como se ve en la linea siguiente */
+en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
+col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
+para que sass sepa que es una variable
+se usa como se ve en la linea siguiente */
 .col-8 {
   /* aca no necesito poner la variable entre las llaves */
   width: 80%;
 }
 
 /*lo que estoy haciendo aca es formar el nombre de la clase con la variable
-    en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
-    col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
-    para que sass sepa que es una variable
-    se usa como se ve en la linea siguiente */
+en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
+col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
+para que sass sepa que es una variable
+se usa como se ve en la linea siguiente */
 .col-9 {
   /* aca no necesito poner la variable entre las llaves */
   width: 90%;
 }
 
 /*lo que estoy haciendo aca es formar el nombre de la clase con la variable
-    en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
-    col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
-    para que sass sepa que es una variable
-    se usa como se ve en la linea siguiente */
+en cada vuelta, la variable va a valer de 1 a 10, y la clase va a ser 
+col-1, col-2, col-3, col-4, col-5, col-6, col-7, col-8, col-9, col-10
+para que sass sepa que es una variable
+se usa como se ve en la linea siguiente */
 .col-10 {
   /* aca no necesito poner la variable entre las llaves */
   width: 100%;
@@ -136,6 +137,10 @@ en este caso dice que empieza en 1 y termina en 10 vueltas, cuando $i vale 10 se
   font-size: 1rem;
 }
 
+.font-3rem {
+  font-size: 3rem;
+}
+
 /*con la r accedo al nombre de la clave
 con $color accedo al valor de la clave*/
 .red-face {
@@ -143,39 +148,15 @@ con $color accedo al valor de la clave*/
 }
 
 .red-instagram {
-  background-color: #fb3a0e;
+  background-color: rgb(251, 58, 14);
 }
 
 .red-telegram {
-  background-color: #0f0140;
+  background-color: rgb(15, 1, 64);
 }
 
 .red-tiktok {
   background-color: red;
-}
-
-.font-thin {
-  font-weight: 100;
-}
-
-.font-light {
-  font-weight: 300;
-}
-
-.font-regular {
-  font-weight: 400;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.font-black {
-  font-weight: 900;
 }
 
 .bold {
@@ -188,23 +169,53 @@ con $color accedo al valor de la clave*/
   /*puede tener mas variables que no reciben valor*/
   background-color: aqua;
   border: 5px solid black;
-  color: #f35670;
+  color: green;
+  /*USO DE EXTEND*/
   /*al tener una clase principal, si tengo que cambiar algo del codigo de ahi, voy a esa clase 
-    padre que tiene la mayoria de los atributos
-    con extend, heredo esos atributos y puedo dar una particularidad a esa clase
-    es como pensar que tengo una plantilla de un boton, y luego puedo hacer muchos botones que tenga
-    algo agregado*/
+  padre que tiene la mayoria de los atributos
+  con extend, heredo esos atributos y puedo dar una particularidad a esa clase
+  es como pensar que tengo una plantilla de un boton, y luego puedo hacer muchos botones que tenga
+  algo agregado*/
 }
-
 .container .container__boton, .container .container__boton--verde {
   width: 30%;
   height: 1.5rem;
+  background-color: aquamarine;
 }
-
 .container .container__boton--verde {
   background-color: green;
   color: white;
   /*agregar animaciones*/
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contenedor-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 /*aca vemos como reutilizo el codigo y le paso otro valor a la propiedad*/
@@ -213,8 +224,8 @@ con $color accedo al valor de la clave*/
   height: 100px;
   /*puede tener mas variables que no reciben valor*/
   background-color: aqua;
-  border: 5px solid black;
-  color: #423b3b;
+  border: 1px solid black;
+  color: rgb(66, 59, 59);
 }
 
 /*operadores
@@ -235,7 +246,7 @@ en este ejemplo usamos un valor en % y el resultado da en %
 
 .instagram {
   /*puedo poner un if dentro de una clase tambien */
-  color: #ff9100;
+  color: #ff00ea;
   /*sino sucede que nombre == instagram,*/
 }
 
@@ -245,6 +256,7 @@ en este ejemplo usamos un valor en % y el resultado da en %
   color: black;
 }
 
+/*uso de mapas con get */
 div {
   background-color: #3673D9;
   text-align: center;
@@ -254,6 +266,47 @@ div {
 
 div {
   background-color: #3673D9;
+}
+
+.container__boton, .container .container__boton--verde {
+  height: 100px;
+  /*puede tener mas variables que no reciben valor*/
+  background-color: aqua;
+  border: 5px solid black;
+  color: rgb(243, 86, 112);
+}
+
+.container__boton--verde {
+  height: 100px;
+  /*puede tener mas variables que no reciben valor*/
+  background-color: aqua;
+  border: 5px solid black;
+  color: green;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 250px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*mixins que son ?
@@ -292,5 +345,4 @@ MAPS:
 son variables cuyo valor es una coleccion
 clave : valor, 
 
-*/
-/*# sourceMappingURL=estilos.css.map */
+*//*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #444;
+}
+.header .navegador {
+  list-style: none;
+}
+.header .navegador .navegador__item {
+  padding: 15px;
+  display: inline-block;
+}
+.header .navegador .navegador__item .link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #444;
+}
+
+.color {
+  background-color: #444;
+}
+
+li {
+  color: blue;
+}
+li:hover {
+  color: red;
+}
+
+body {
+  color: #666;
+  font-family: arial, verdana, sans-serif;
+}
+
+h1 {
+  background-color: #55A;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.4em;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 12px;
+}
+
+div.destacado {
+  border: 1px solid #6B6;
+  padding: 10px 20px;
+}/*# sourceMappingURL=estilos.css.map */

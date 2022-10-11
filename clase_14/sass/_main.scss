@@ -5,8 +5,9 @@
     .container__boton{
         width: 30%;
         height: 1.5rem;
-       
+        background-color: aquamarine;
      }
+     /*USO DE EXTEND*/
     /*al tener una clase principal, si tengo que cambiar algo del codigo de ahi, voy a esa clase 
     padre que tiene la mayoria de los atributos
     con extend, heredo esos atributos y puedo dar una particularidad a esa clase
@@ -21,6 +22,26 @@
     }
     
 }
+
+div{
+    @include flex-direction-center(row);
+}
+
+.box{
+    @include flex-direction-center(row);
+}
+
+.contenedor-box{
+    @include flex-direction-center(column);
+}
+
+.contenedor-grid{
+    @include grid-columns-row(4,auto)
+}
+.contenedor-grid{
+    @include grid-columns-row(1,3)
+}
+
 /*aca vemos como reutilizo el codigo y le paso otro valor a la propiedad*/
 .container__header{
     width: 100%;
@@ -28,6 +49,8 @@
     @include miMixin2(100px,$borde-principal,rgb(66, 59, 59));
   
 }
+
+
 /*operadores
 en este ejemplo usamos un valor en % y el resultado da en %
 
@@ -54,7 +77,7 @@ en este ejemplo usamos un valor en % y el resultado da en %
 }
 
 
-
+/*uso de mapas con get */
 div {
   background-color: map-get($estilos, color);
   text-align: map-get($estilos, centro);
@@ -76,6 +99,9 @@ div{
    @include miMixin2(100px,$borde,$bg-color-green);
 
 }
+.main{
+    @include contenedor_grid($primary-color,center,center);
+}
 
 .box{
     @include flex-row-center;
@@ -94,5 +120,18 @@ div{
 	display:$flex;
 	flex-direction:$row;
 	justify-content:$center;
+}
+
+
+.div__empresa2{
+    display:flex;
+    @include alineacion-flex(center,center);
+    background-color: rgb(179, 240, 179);
+}
+
+.div__empresa1{
+    @extend .div__empresa2;
+    @include alineacion-flex(center,right);
+    background-color: rgb(180,180,180);
 }
 
